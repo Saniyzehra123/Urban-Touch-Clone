@@ -1,0 +1,51 @@
+{"home":[
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_b387a3ee-3d9b-4176-9d71-56b0cfb4c706.jpg?v=1651144737",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_af873af6-9b52-4216-8ab6-4ec5fc3f84c4.jpg?v=1651144737",
+        "title":"LT Green Checkerd Shirt",
+        "price":"eRs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_25861418-298e-4904-8b47-505c91c17742.jpg?v=1651925449&width=600",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_f235550f-d4f1-4c32-a33b-236cd720bc29.jpg?v=1651925450",
+        "title":" White Checkerd Shirt",
+        "price":" Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_eea58c17-a4c0-46c4-80dc-481fbb30eadc.jpg?v=1651925527&width=600",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_f4990f56-94da-4a85-ab00-9f25ccb6c8e2.jpg?v=1651925526",
+        "title":" Brown Checkerd Shirt",
+        "price":" Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_e495ac77-9ab6-46d8-b1cc-4098f2c45a25.jpg?v=1651925580&width=600",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_dcb1b37b-52df-4b97-8470-d2d9def1a97c.jpg?v=1651925581",
+        "title":" Grey Checkerd Shirt",  
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_38b183c1-9762-45d8-bbed-991d4756de6c.jpg?v=1651925480&width=600",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_d8610ea5-a02f-45a2-80ff-7e5a64f89ba6.jpg?v=1651925481&width=600",
+        "title":"DK Blue Stripes Shirt",
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_cc545ad1-e3e0-4fd3-bc9b-c567bf05113c.jpg?v=1651925618&width=600",
+        "image2":" https://cdn.shopify.com/s/files/1/2381/1785/products/2_fbfaef63-4f67-4266-b90d-c761e3ea7dee.jpg?v=1651925617&width=600",
+        "title":" DK Blue Plain Shirt",
+        "price":"Rs. 1,499.00"
+    }
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_91cdd0f9-a5de-4a02-af92-7d83f3e28c2e.jpg?v=1651925399&width=600",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_eb532f7d-a303-432f-ae13-a7c3e240b293.jpg?v=1651925399&width=600",
+        "title":"Navy Printed Shirt",
+        "price":"Rs. 1,399.00"
+    }
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_72fdc7c3-f367-4bae-9d42-141d17ca36fb.jpg?v=1651925263&width=600",
+        "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_89da7e24-8593-4c7b-947c-ad99fa116f03.jpg?v=1651925262&width=600",
+        "title":" White Printed Shirt",
+        "price":"Rs. 1,599.00"
+    }
+ ]
+}

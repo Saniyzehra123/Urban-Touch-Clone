@@ -1,9 +1,9 @@
 .navcontainer{
     width:100%;
-    height: 300px;
+    height: 200px;
     border:1px solid blue;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 .topnav{
     border:1px solid red;
@@ -19,6 +19,10 @@
     width: 100%;
     height:40px;
     padding-top: 30px;
+}
+.urbannav>img{
+    /* margin-top: -65px; */
+    margin-left: 30%;
 }
 .links{
     border:1px solid green;
