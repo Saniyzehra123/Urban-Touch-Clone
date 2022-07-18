@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReactPlayer from 'react-player'
 import "./Homepage.css"
 
+
+
 export default function Homepage() {
+
+ const [video,setvideo]= useState("false")
   return (
     <div>
       
@@ -38,9 +43,20 @@ export default function Homepage() {
       </div>
     </div>
 
-    <div>
-      <img src="https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch_1_96b59a43-e1df-4631-8ef2-3e04198c1e3d.jpg?v=1519987513&width=1500" alt="" />
+    
+    {/* <iframe src=" https://youtu.be/ywX9rSu38wc" title="W3Schools Free Online Web Tutorials"> */}
+
+ 
+    <div  className='video'   onClick={()=> setvideo(!video)}>
+     
+     {video?  <img src="https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch_1_96b59a43-e1df-4631-8ef2-3e04198c1e3d.jpg?v=1519987513&width=1500" alt="" /> : <ReactPlayer controls url='https://youtu.be/ywX9rSu38wc' width='100%' height='100%' /> }
+     
+     
+      
     </div>
+     {/* </iframe> */}
+  
+     
     </div>
   )
 }

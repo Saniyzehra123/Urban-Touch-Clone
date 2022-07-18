@@ -34,18 +34,476 @@
         "image2":" https://cdn.shopify.com/s/files/1/2381/1785/products/2_fbfaef63-4f67-4266-b90d-c761e3ea7dee.jpg?v=1651925617&width=600",
         "title":" DK Blue Plain Shirt",
         "price":"Rs. 1,499.00"
-    }
+    },
     {
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_91cdd0f9-a5de-4a02-af92-7d83f3e28c2e.jpg?v=1651925399&width=600",
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_eb532f7d-a303-432f-ae13-a7c3e240b293.jpg?v=1651925399&width=600",
         "title":"Navy Printed Shirt",
         "price":"Rs. 1,399.00"
-    }
+    },
     {
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_72fdc7c3-f367-4bae-9d42-141d17ca36fb.jpg?v=1651925263&width=600",
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_89da7e24-8593-4c7b-947c-ad99fa116f03.jpg?v=1651925262&width=600",
         "title":" White Printed Shirt",
         "price":"Rs. 1,599.00"
     }
- ]
+ 
+ ],
+
+ 
+ "newarrival":[
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_b387a3ee-3d9b-4176-9d71-56b0cfb4c706.jpg?v=1651144737",
+        
+        "title":"LT Green Checkerd Shirt",
+        "price":"eRs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_25861418-298e-4904-8b47-505c91c17742.jpg?v=1651925449&width=600",
+     
+        "title":" White Checkerd Shirt",
+        "price":" Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_eea58c17-a4c0-46c4-80dc-481fbb30eadc.jpg?v=1651925527&width=600",
+       
+        "title":" Brown Checkerd Shirt",
+        "price":" Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_e495ac77-9ab6-46d8-b1cc-4098f2c45a25.jpg?v=1651925580&width=600",
+     
+        "title":" Grey Checkerd Shirt",  
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_38b183c1-9762-45d8-bbed-991d4756de6c.jpg?v=1651925480&width=600",
+        
+        "title":"DK Blue Stripes Shirt",
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_cc545ad1-e3e0-4fd3-bc9b-c567bf05113c.jpg?v=1651925618&width=600",
+         
+        "title":" DK Blue Plain Shirt",
+        "price":"Rs. 1,499.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_91cdd0f9-a5de-4a02-af92-7d83f3e28c2e.jpg?v=1651925399&width=600",
+         
+        "title":"Navy Printed Shirt",
+        "price":"Rs. 1,399.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_72fdc7c3-f367-4bae-9d42-141d17ca36fb.jpg?v=1651925263&width=600",
+         
+        "title":" White Printed Shirt",
+        "price":"Rs. 1,599.00"
+    },
+    {
+        "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/1_304c186e-bb75-45b5-a0e4-1be02a67b44d.jpg?v=1651925109&width=360",
+         
+        "title":"Brown Checkerd Shirt",
+        "price":"Rs. 1,599.00"
+    },
+    {
+        
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_73c822d7-7475-47ce-83f6-d3dd19de4a36.jpg?v=1651925030&width=360",
+         
+        "title":" White Printed Shirt",
+        "price":"Rs. 1,599.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_925ffe60-1b4b-42b2-8e46-4f8dcbacbbce.jpg?v=1651925295&width=360",
+        "title":"Grey Printed Shirt",
+        "price":"Rs. 1,399.00"
+    }
+    ,
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_b3a7c22b-17b6-4014-925a-161176b31cc3.jpg?v=1651925073&width=360",
+        "title":"DK Grey Checkered Shirt",
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_1cf115d9-9fb1-4303-bf66-10cd2bc03683.jpg?v=1651925155&width=360",
+        "title":"Brown Printed Shirt",
+        "price":"Rs. 1,599.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_1cf115d9-9fb1-4303-bf66-10cd2bc03683.jpg?v=1651925155&width=360",
+        "title":"Brown Printed Shirt",
+        "price":"Rs. 1,599.00"  
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_37101842-cb1a-4f03-bfce-dd17aaeb9602.jpg?v=1651924984&width=360",
+        "title":"Navy Checkerd Shirt ",
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_073db5c1-9b8c-4031-94a8-63bea8c25703.jpg?v=1651925330&width=360 ",
+        "title":" LT Brown Checkerd Shirt ",
+        "price":"Rs. 1,699.00"
+    },
+    {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_55ba84d6-6665-42e1-b21c-392145ac1d06.jpg?v=1651925187&width=360",
+        "title": "Yelllo Printed Shirt",
+        "price":"Rs. 1,399.00"
+    }
+ ],
+    "Shirts": [
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRMYEGSH1092HS-2.jpg?v=1575551059&width=360",
+            "title": " Navy cotton linen solid shirt",
+            "price":"Rs. 1,399.00"
+        },
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/18ARMKSH0427-1.jpg?v=1575550796&width=360",
+            "title": "White/Blue Print Slim Fit Casual Shirt",
+            "price":"Rs. 1,499.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18AUFPSH0587-1.jpg?v=1575551067&width=360",
+            "title": "Navy/Blue Print Slim Fit Casual Shirt",
+            "price":"Rs. 1,499.00"
+
+        }
+        ,
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18AUSJSH0576-1.jpg?v=1575551049&width=360",
+            "title": "Navy Checks Slim Fit Casual Shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18MAESSH0320-1.jpg?v=1575551112&width=360",
+            "title": "Orange DOBBY Slim Fit Casual Shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18SESJSH0758.2.jpg?v=1575552442&width=360",
+            "title":"Navy and brick red check shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18SESJSH0775-1.jpg?v=1575552437&width=360",
+            "title":"Navy and blue check shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/18SESJSH0777-1.jpg?v=1575552437&width=360",
+            "title":"Navy and blue check shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18SESJSH0781-2.jpg?v=1646903625&width=360",
+            "title":"Navy and blue check shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18SESJSH0782-1.jpg?v=1575551121&width=360",
+            "title": "Pink and blue checkered casual shirt",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_7c1bebb1-e885-4df1-a4b7-43e38d46020c.jpg?v=1583301356&width=360",
+            "title":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_7c1bebb1-e885-4df1-a4b7-43e38d46020c.jpg?v=1583301356&width=360",
+            "price":"Rs. 1,499.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_7c1bebb1-e885-4df1-a4b7-43e38d46020c.jpg?v=1583301356&width=360",
+            "title":"Navy shirt with yellow, brown and white checkered pattern",
+            "price":"Rs. 1,499.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRMYFPSH1171CC-1.jpg?v=1583301540&width=360",
+            "title":"Green cotton linen solid shirt",
+            "price":"Rs. 1,499.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRMYEGSH1091FS-1.jpg?v=1575551111&width=360",
+            "title":"Orange cotton linen solid shirt",
+            "price":"Rs. 1,499.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRMYEGSH1093-1.jpg?v=1583301292&width=360",
+            "title":"Sky blue cotton linen solid shirt",
+            "price":"Rs. 1,499.00"
+             },{
+                "image":"https://cdn.shopify.com/+s/files/1/2381/1785/products/LRNOSSSH1771.jpg?v=1585291548&width=360",
+                "title":"Light Yellow Printed Shirt",
+                "price":"Rs. 1,499.00"
+             },
+             {
+                "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRNOSSSH1772.jpg?v=1585291631&width=360",
+                "title":"Light Aqua Blue Printed Shirt",
+                "price":"Rs. 1,499.00"
+             }
+
+    ],
+    "T-shirt":[
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0051.jpg?v=1592294203&width=360",
+            "title": "White Polo T-Shirt",
+            "price":"Rs. 999.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0049.jpg?v=1592294142&width=360",
+            "title": "Blue Polo T-Shirt",
+            "price":"Rs. 999.00"
+        }
+        ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0043.jpg?v=1592293762&width=360",
+            "title": "Red Polo T-Shirt",
+            "price":"Rs. 999.00"
+        }
+        ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0044.jpg?v=1592293831&width=360",
+            "title": "Maroon Polo T-Shirt",
+            "price":"Rs. 999.00"
+        }
+        ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0048.jpg?v=1592294264&width=360",
+            "title": "Teal Blue Polo T-Shirt",
+            "price":"Rs. 999.00"
+        }
+        ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0048.jpg?v=1592294264&width=360",
+            "title": " Navy Polo T-Shirt",
+            "price":"Rs. 999.00"
+        }
+        ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0046.jpg?v=1592293966&width=360 ",
+            "title": "Teal Blue Polo T-Shirt",
+            "price":"Rs. 999.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0045.jpg?v=1592293890&width=360",
+            "title": " Navy Polo T-Shirt",
+            "price":"Rs. 999.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0046.jpg?v=1592293966&width=360",
+            "title": " Dark Grey Polo T-Shirt",
+            "price":"Rs. 999.00"
+        },{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0030_1.jpg?v=1592293691&width=360",
+            "title": "  Light Brown Chest Printed T-Shirt",
+            "price":"Rs. 599.00" 
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0031.jpg?v=1592293490&width=360",
+            "title": "Navy Chest Printed T-Shirt",
+            "price":"Rs. 599.00"
+        }, {
+
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0034.jpg?v=1592293427&width=360",
+            "title": " Navy Chest Printed T-Shirt -Full Sleeve",
+            "price":"Rs. 699.00"
+        },{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0035.jpg?v=1592293564&width=360",
+            "title": "Red Chest Printed T-Shirt -Full Sleeve",
+            "price":"Rs. 699.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18SEMRTS0001.1.jpg?v=1575550757&width=360",
+            "title": " urban explorergrass chest printed t shirt",
+            "price":"Rs. 699.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0035.jpg?v=1592293770&width=360",
+            "title": "Dark Brown Chest Printed T-Shirt",
+            "price":"Rs. 599.00"
+        },{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0032.jpg?v=1592293218&width=360",
+            "title": " Charcoal Grey Chest Printed T-Shirt",
+            "price":"Rs. 599.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRCRKAVPACK_1.jpg?v=1575551116&width=360",
+            "title": " PACK OF 3 T SHIRTS -Wine, Grey Melange, Navy.",
+            "price":"Rs. 999.00"
+        },{
+            "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/0003-1.jpg?v=1575550230&width=360",
+            "title": " Classic Yellow polo in slim fit.",
+            "price":"Rs. 899.00"
+
+        }
+        ,{
+            "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/1_c6115ee2-f06d-4423-b5f8-5f85b5c9ea56.jpg?v=1575550735&width=360",
+            "title": "Traditional outdoor yellow chest printed TShirt",
+            "price":"Rs. 599.00"
+
+        }
+    ],
+    "trousers": [
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LRFESJTR0050.jpg?v=1592820057&width=360",
+            "title": " Cream-TROUSERS",
+            "price":"Rs. 1699.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRFESJTR0049.jpg?v=1592820002&width=360",
+            "title": "Khaki-TROUSERS",
+            "price":"Rs. 1699.00"
+        },{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LRFESJTR0051.jpg?v=1592820119&width=360",
+            "title": " Brown-TROUSERS",
+            "price":"Rs. 1699.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LRFESJTR0053.jpg?v=1592820248&width=360",
+            "title": "Dark Grey-TROUSERS",
+            "price":"Rs. 1699.00"
+        },
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LRMRSJTR0058-1.jpg?v=1575552330&width=360",
+            "title": "Grey contour fit trousers.",
+            "price":"Rs. 1,799.00" 
+        },
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LRFESJTR0052.jpg?v=1592820176&width=360",
+            "title": "Deep Navy-TROUSERS",
+            "price":"Rs. 1,699.00"  
+        },
+        
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LRFESJTR0052.jpg?v=1592820176&width=360",
+            "title": " Navy contour fit trousers",
+            "price":"Rs. 1,699.00"  
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_ba0f3489-4d62-43d1-ad8a-8e6aaca52648.jpg?v=1575552385&width=360",
+            "title": " Khaki contour fit trousers.",
+            "price":"Rs. 1,799.00"  
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_54150608-a3e3-4454-88b2-147f8043f11a.jpg?v=1575550151&width=360",
+            "title": " Blue contour fit trousers.",
+            "price":"Rs. 1,799.00"  
+        },
+       {
+        "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/3_20c7b3b0-d956-4a29-9ad7-1f38ae649983.jpg?v=1575550255&width=360",
+        "title": " Dark grey contour fit trousers.",
+        "price":"Rs. 1,799.00"  
+       },
+       {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_7d523b56-11c0-4478-977a-d6d8bd83a556.jpg?v=1575550111&width=360",
+        "title": " Dark grey contour fit trousers.",
+        "price":"Rs. 1,599.00"  
+       },
+       {
+        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18MYSJTR0031.1.jpg?v=1575552273&width=360",
+        "title": "ecru casual mid raise trouser",
+        "price":"Rs. 1,699.00"  
+       },
+       {
+        "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDCD0011-1.jpg?v=1575550186&width=360",
+        "title": " Brown casual mid raise trouser",
+        "price":"Rs. 1,899.00"  
+       },
+       {
+        "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDCD0010-1.jpg?v=1575550107&width=360",
+        "title": " Brown casual mid raise trouser",
+        "price":"Rs. 1,899.00"  
+       },
+       {
+        "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDCD0009-1.jpg?v=1575552384&width=360 ",
+        "title": "  Khaki casual mid raise trouser",
+        "price":"Rs. 1,899.00"  
+       },
+       {
+        "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDCD0008-1.jpg?v=1575550178&width=360",
+        "title": "  Bottle green casual mid raise trouser",
+        "price":"Rs. 1,899.00"  
+       }
+
+    ]
+    ,
+    "denims": [
+        {
+            "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFUJE0077.jpg?v=1592820312&width=360",
+            "title": " Olive-JEANS",
+            "price":"Rs. 1,999.00"  
+           },{
+            "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/1_b7cece97-14c4-4cea-8181-5020d0422cb4.jpg?v=1575550251&width=360",
+            "title": "  Dark gray slim fit denims",
+            "price":"Rs. 1,899.00"  
+           },
+           {
+            "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/18AUCMJE0016.1.jpg?v=1575550265&width=360",
+            "title": "  Dark Indigo jeans with mild wash effects in stretch base fabric",
+            "price":"Rs. 1,999.00"  
+           },{
+            "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/18MACMJE0008-1.jpg?v=1575552395&width=360",
+            "title": " Light blue washed denim",
+            "price":"Rs. 1,799.00"  
+           }
+    ],
+    "shorts":[
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_3d399df7-7b93-4113-b922-c58825065b15.jpg?v=1575550097&width=360",
+            "title": "Beige Uber cool shorts.",
+            "price":"Rs. 999.00"
+        },{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_8d24e6bc-3217-4ab3-b56c-951978e17449.jpg?v=1575550241&width=360",
+            "title": "Beige Uber cool shorts.",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_65e9c4b1-0dbf-49b9-b0d2-c36010022d80.jpg?v=1575552388&width=360",
+            "title": " Khaki Uber cool shorts.",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDSS0005-4.jpg?v=1575551186&width=360",
+            "title": " Self design shorts in color Black",
+            "price":"Rs. 1,299.00"
+        }
+           ,{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDSS0004-4.jpg?v=1575551187&width=360",
+            "title": " Self design shorts in color Blue",
+            "price":"Rs. 1,299.00"
+        }
+           ,{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/1_60c89d84-e592-405c-9d48-9956f00a1068.jpg?v=1575551107&width=360",
+            "title": "  Olive Printed Shorts",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LROCUTSS0012.jpg?v=1592820701&width=360",
+            "title": "  Navy-Shorts",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LROCUTSS0011.jpg?v=1592820395&width=360",
+            "title": " Black-Shorts",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_536a47b3-4ed3-47f5-95cd-c02e6556b306.jpg?v=1575551101&width=360",
+            "title": "  Old school checkered shorts in Narrow fit",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/1_5e59416f-bef1-44e3-b904-befc0fbb2662.jpg?v=1575550206&width=360",
+            "title": "   Camo shorts with minimal stitch detailing in Narrow fit.",
+            "price":"Rs. 999.00"
+        }
+           ,{
+            "image":"  https://cdn.shopify.com/s/files/1/2381/1785/products/1_7927e892-f4cc-41b9-a9c8-e862ec51f478.jpg?v=1575550204&width=360",
+            "title": "   Camo shorts with minimal stitch detailing in Narrow fit.",
+            "price":"Rs. 999.00"
+        }
+    ],
+    
+    "sweaters":[
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18NOACSW0001.1.jpg?v=1575551093&width=360",
+            "title": "navy stripe sweater",
+            "price":"Rs. 1,799.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18NOACSW0002.1_cbb18e07-fc91-4d8e-bbda-6fef402fd9c1.jpg?v=1575551097&width=360",
+            "title":  "navy/melange/grey stripe sweater",
+            "price":"Rs. 1,899.00"
+        },
+        {
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18NOACSW0003.1.jpg?v=1575550210&width=360",
+            "title":  "charcol Melange Sweater",
+            "price":"Rs. 1,599.00"
+        },
+        {
+            "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/18NOACSE0004.1.jpg?v=1575552323&width=360",
+            "title":  " GREY AND MELANGE STRIPE SWEATER",
+            "price":"Rs. 1,699.00"
+        }
+    ]
 }
+
