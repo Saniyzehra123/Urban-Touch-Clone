@@ -11,7 +11,7 @@ export default function Homepage() {
     <div>
       
      <div>
-      <img  width="100%" height="700px"
+      <img  width="100%" height="700px"  
       src="https://cdn.shopify.com/s/files/1/2381/1785/files/web_banner.jpg?v=1654243325&width=1500" alt="" />
     
     

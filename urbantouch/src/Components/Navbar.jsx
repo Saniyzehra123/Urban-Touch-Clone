@@ -18,11 +18,12 @@ export default function Navbar() {
         
       <div className='secondnav'> 
        <div className='urbannav'>
-        <IoIosSearch  style={{width:"80Linkx", height :"23Linkx", marginLeft:"2%"}}/>
+        <IoIosSearch  style={{width:"20px", height :"40px", marginLeft:"2%"}}/>
         <img 
-        src='httLinks://cdn.shoLinkify.com/s/files/1/2381/1785/files/urbantouch-logo_250x.jLinkg?v=1647581012' alt='logo' className='logo'/>
-       <Link to= "/login" ><FaRegUser   style={{width:"80Linkx", height :"23Linkx", marginLeft:"25%"}}/></Link>
-       <BsHandbag  style={{width:"80Linkx", height :"23Linkx" }}/>
+        src='https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch-logo_250x.jpg?v=1647581012' alt='logo' className='logo'/>
+      
+       <Link to= "/login" ><FaRegUser   style={{width:"20px", height :"40px",color:"black", marginLeft:"25%"}}/></Link>
+       <BsHandbag  style={{width:"20px", height :"40px", marginLeft:"20px" }}/>
        
         </div>
 
@@ -31,12 +32,13 @@ export default function Navbar() {
           <Link to= "/newarrival">New Arrivals</Link>
           <Link to= "/shirt">Shirts</Link>
           <Link to="/tshirt">T-Shirts</Link>
-          <Link>Trousers</Link>
-          <Link>Denims</Link>
-          <Link>Shorts</Link>
-          <Link>Sweaters</Link>
-          <Link>Stores</Link>
+          <Link to="/trouser">Trousers</Link>
+          <Link to="/denims">Denims</Link>
+          <Link to="/shorts">Shorts</Link>
+          <Link to="/sweater">Sweaters</Link>
+          {/* <Link>Stores</Link> */}
           <Link to="/blog"> Blog </Link>
+          {/* <Link to="/productdetails">Product Details</Link> */}
         
           {/* <Link >New Arrivals</Link>
           <Link>Shirts</Link>

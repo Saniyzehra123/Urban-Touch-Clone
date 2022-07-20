@@ -53,98 +53,105 @@
  
  "newarrival":[
     {
+        "id":1,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_b387a3ee-3d9b-4176-9d71-56b0cfb4c706.jpg?v=1651144737",
         
         "title":"LT Green Checkerd Shirt",
         "price":"eRs. 1,699.00"
     },
     {
+        "id":2,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_25861418-298e-4904-8b47-505c91c17742.jpg?v=1651925449&width=600",
      
         "title":" White Checkerd Shirt",
         "price":" Rs. 1,699.00"
     },
     {
+        "id":3,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_eea58c17-a4c0-46c4-80dc-481fbb30eadc.jpg?v=1651925527&width=600",
        
         "title":" Brown Checkerd Shirt",
         "price":" Rs. 1,699.00"
     },
     {
+        "id":4,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_e495ac77-9ab6-46d8-b1cc-4098f2c45a25.jpg?v=1651925580&width=600",
      
         "title":" Grey Checkerd Shirt",  
         "price":"Rs. 1,699.00"
     },
     {
+        "id":5,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_38b183c1-9762-45d8-bbed-991d4756de6c.jpg?v=1651925480&width=600",
         
         "title":"DK Blue Stripes Shirt",
         "price":"Rs. 1,699.00"
     },
     {
+        "id":6,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_cc545ad1-e3e0-4fd3-bc9b-c567bf05113c.jpg?v=1651925618&width=600",
          
         "title":" DK Blue Plain Shirt",
         "price":"Rs. 1,499.00"
     },
     {
+        "id":7,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_91cdd0f9-a5de-4a02-af92-7d83f3e28c2e.jpg?v=1651925399&width=600",
          
         "title":"Navy Printed Shirt",
         "price":"Rs. 1,399.00"
     },
     {
+        "id":8,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_72fdc7c3-f367-4bae-9d42-141d17ca36fb.jpg?v=1651925263&width=600",
          
         "title":" White Printed Shirt",
         "price":"Rs. 1,599.00"
     },
     {
+        "id":9,
         "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/1_304c186e-bb75-45b5-a0e4-1be02a67b44d.jpg?v=1651925109&width=360",
          
         "title":"Brown Checkerd Shirt",
         "price":"Rs. 1,599.00"
     },
     {
-        
+        "id":10,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_73c822d7-7475-47ce-83f6-d3dd19de4a36.jpg?v=1651925030&width=360",
          
         "title":" White Printed Shirt",
         "price":"Rs. 1,599.00"
     },
-    {
+    {   "id":11,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_925ffe60-1b4b-42b2-8e46-4f8dcbacbbce.jpg?v=1651925295&width=360",
         "title":"Grey Printed Shirt",
         "price":"Rs. 1,399.00"
     }
     ,
-    {
+    {   "id":12,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_b3a7c22b-17b6-4014-925a-161176b31cc3.jpg?v=1651925073&width=360",
         "title":"DK Grey Checkered Shirt",
         "price":"Rs. 1,699.00"
     },
-    {
-        "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_1cf115d9-9fb1-4303-bf66-10cd2bc03683.jpg?v=1651925155&width=360",
-        "title":"Brown Printed Shirt",
-        "price":"Rs. 1,599.00"
-    },
-    {
+    
+    {   "id":13,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_1cf115d9-9fb1-4303-bf66-10cd2bc03683.jpg?v=1651925155&width=360",
         "title":"Brown Printed Shirt",
         "price":"Rs. 1,599.00"  
     },
-    {
+    {   "id":14,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_37101842-cb1a-4f03-bfce-dd17aaeb9602.jpg?v=1651924984&width=360",
         "title":"Navy Checkerd Shirt ",
         "price":"Rs. 1,699.00"
     },
     {
+        "id":15,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_073db5c1-9b8c-4031-94a8-63bea8c25703.jpg?v=1651925330&width=360 ",
         "title":" LT Brown Checkerd Shirt ",
         "price":"Rs. 1,699.00"
     },
     {
+        "id":16,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_55ba84d6-6665-42e1-b21c-392145ac1d06.jpg?v=1651925187&width=360",
         "title": "Yelllo Printed Shirt",
         "price":"Rs. 1,399.00"
@@ -202,11 +209,7 @@
             "title": "Pink and blue checkered casual shirt",
             "price":"Rs. 1,499.00"
         },
-        {
-            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_7c1bebb1-e885-4df1-a4b7-43e38d46020c.jpg?v=1583301356&width=360",
-            "title":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_7c1bebb1-e885-4df1-a4b7-43e38d46020c.jpg?v=1583301356&width=360",
-            "price":"Rs. 1,499.00"
-        },
+        
         {
             "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_7c1bebb1-e885-4df1-a4b7-43e38d46020c.jpg?v=1583301356&width=360",
             "title":"Navy shirt with yellow, brown and white checkered pattern",
@@ -224,7 +227,7 @@
             "title":"Sky blue cotton linen solid shirt",
             "price":"Rs. 1,499.00"
              },{
-                "image":"https://cdn.shopify.com/+s/files/1/2381/1785/products/LRNOSSSH1771.jpg?v=1585291548&width=360",
+                "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LRNOSSSH1771.jpg?v=1585291548&width=360",
                 "title":"Light Yellow Printed Shirt",
                 "price":"Rs. 1,499.00"
              },
@@ -261,19 +264,11 @@
             "price":"Rs. 999.00"
         }
         ,{
-            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0048.jpg?v=1592294264&width=360",
+            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0045.jpg?v=1592293890&width=360 ",
             "title": " Navy Polo T-Shirt",
             "price":"Rs. 999.00"
         }
-        ,{
-            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0046.jpg?v=1592293966&width=360 ",
-            "title": "Teal Blue Polo T-Shirt",
-            "price":"Rs. 999.00"
-        },{
-            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0045.jpg?v=1592293890&width=360",
-            "title": " Navy Polo T-Shirt",
-            "price":"Rs. 999.00"
-        },{
+        ,  {
             "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0046.jpg?v=1592293966&width=360",
             "title": " Dark Grey Polo T-Shirt",
             "price":"Rs. 999.00"
@@ -298,10 +293,6 @@
             "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/18SEMRTS0001.1.jpg?v=1575550757&width=360",
             "title": " urban explorergrass chest printed t shirt",
             "price":"Rs. 699.00"
-        },{
-            "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0035.jpg?v=1592293770&width=360",
-            "title": "Dark Brown Chest Printed T-Shirt",
-            "price":"Rs. 599.00"
         },{
             "image":" https://cdn.shopify.com/s/files/1/2381/1785/products/LROCFCTS0032.jpg?v=1592293218&width=360",
             "title": " Charcoal Grey Chest Printed T-Shirt",

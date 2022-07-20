@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import { getShirtData } from '../../Redux/Shirt/action';
+import "../ProductPage/Shirts.css";
 
 export default function Shirt() {
 
@@ -18,8 +19,23 @@ export default function Shirt() {
      },[dispatch.shirts?.length]);
       console.log("shirt",shirts)
   return (
-    <div>
-      
+    <div> 
+        <h1 className='heading'> SHIRTS</h1>
+      <h2 className='subtitle'> features shirts from urbantouch. Choose the best outfit from a wide range  <br/> of collection.</h2>
+
+    <div className='shirtcontain'>
+      {
+        shirts.map((shirt,index)=>{
+            return(
+                <div key={index}>
+                    <img src={shirt.image} alt=""/>
+                    <h3>{shirt.title}</h3>
+                    <p>{shirt.price}</p>
+                </div>
+            )
+        })
+      }
+    </div>
     </div>
   )
 }

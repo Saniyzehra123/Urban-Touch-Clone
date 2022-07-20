@@ -19,7 +19,7 @@ export const getTShirtFailure = (payload)=> ({
 export const getTShirtData =(payload)=>{
     return (dispatch) => {
         dispatch(getTShirt());
-        axios.get(`http://localhost:8080/T-Tshirt`,{
+        axios.get(`http://localhost:8080/T-shirt`,{
             params:{
                 ...payload,
             }

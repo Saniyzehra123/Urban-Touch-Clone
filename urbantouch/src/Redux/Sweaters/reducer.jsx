@@ -1,33 +1,33 @@
- import * as types from '../Newarrival/actionTypes';
- 
+import * as types from '../Newarrival/actionTypes';
+
+
 const initialState = {
     isLoading: false,
-    tshirts: [],
+     sweater: [],
     error: null
 }
-
-export const tshirtreducer = (state = initialState, action) => {
+ 
+export const sweaterSreducer = (state = initialState, action) => {
     const {type, payload} = action;
     switch (type) {
-        case types.GET_TSHIRT:
+        case types.GET_SWEATERS:
             return {
                 ...state,
                 error:'',
                 isLoading: true
             }
-        case types.GET_TSHIRT_SUCCESS:
+        case types.GET_SWEATERS_SUCCESS:
             return {
                 ...state,
-                tshirts: payload,
+                sweater: payload,
                 error:'',
                 isLoading: false,
-         
             }
-        case types.GET_TSHIRT_FAILURE:
+        case types.GET_SWEATERS_FAILURE:
             return {
                 ...state,
                 isLoading: false,
-               error :payload
+                error :payload
             }
         default:
             return state;

@@ -2,7 +2,12 @@ import {  legacy_createStore, applyMiddleware, combineReducers, compose } from "
 import thunk from "redux-thunk";
 import { newarrivalreducer } from "./Newarrival/reducer";
 import { shirtreducer } from "./Shirt/reducer";
-import { Tshirtreducer } from "./T-shirt/reducer";
+import { tshirtreducer } from "./T-shirt/reducer";
+import { trouserreducer } from "./Trouser/reducer";
+import { denimsreducer } from "./Denims/reducer";
+ 
+import {shortreducer } from "./Shorts/reducer";
+import {sweaterSreducer} from "./Sweaters/reducer";
 
 // const composeEnhancers =
 //   typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
@@ -23,6 +28,12 @@ const enhancer = composeEnhancers(
 const rootReducer = combineReducers({
     newarrivalreducer,
     shirtreducer,
-    Tshirtreducer
+    tshirtreducer,
+    trouserreducer,
+    denimsreducer,
+   
+    sweaterSreducer,
+  
+    shortreducer 
 });
 export const store =  legacy_createStore(rootReducer, enhancer);
