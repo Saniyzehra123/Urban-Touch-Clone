@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { getShirtData } from '../../Redux/Shirt/action';
 import "../ProductPage/Shirts.css";
 
@@ -28,9 +28,12 @@ export default function Shirt() {
         shirts.map((shirt,index)=>{
             return(
                 <div key={index}>
-                    <img src={shirt.image} alt=""/>
+                <NavLink to={`/shirt/${shirt.id}`}>
+                <img src={shirt.image} alt=""/>
                     <h3>{shirt.title}</h3>
                     <p>{shirt.price}</p>
+                </NavLink>
+                
                 </div>
             )
         })

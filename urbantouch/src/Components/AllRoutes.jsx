@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Blog from './Blog'
+import Fotter from './Fotter'
 import Homepage from './Homepage'
  
 import Login from './Login'
@@ -30,12 +31,18 @@ export default function AllRoutes() {
         <Route path="/denims" element={<Denims/>} />
         <Route path="/shorts" element={<Shorts/>} />
         <Route path="/sweater" element={<Sweater/>} />
+        <Route path="/blog" element={<Blog/>} />
+
         {/* <Route path="/productdetails" element={<Productdetail/>} /> */}
         <Route path="/newarrival/:id" element={<Productdetail/>} />
+        <Route path="/shirt/:id" element={<Productdetail/>} />
         
         <Route path="/blog" element={<Blog/>} />
 
       </Routes>
+      <div>
+        <Fotter/>
+      </div>
     </div>
   )
 }

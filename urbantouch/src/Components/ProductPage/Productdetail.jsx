@@ -2,14 +2,29 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import {  getMensData} from '../../Redux/Newarrival/action';
-
+import { getShirtData } from '../../Redux/Shirt/action';
 
 export default function Productdetail({product}) {
+  const [count,setcount] = useState(0)
+const handleadd= ()=>{
+ 
+  setcount(count+1)
+
+  }
+const handlesub= ()=>{
+if(count <= 0){
+    return
+}
+setcount(count-1)
+}
+
+
   const {id}=useParams();
   console.log("id",id)
         const dispatch=useDispatch();
         const [current, setCurrent]=useState({});
         const products=useSelector(store=>store.newarrivalreducer.products);
+        const  shirts = useSelector( store =>  store.shirtreducer.shirts);
 
         useEffect(()=>{
          if(products.length===0){
@@ -17,15 +32,27 @@ export default function Productdetail({product}) {
          }
         },[dispatch.products?.length]);
         console.log("prop",products)
+
+        ///shirt//
+        useEffect(()=>{
+         if(  shirts.length===0){
+           dispatch(getShirtData());
+         }
+        },[dispatch.shirts?.length]);
+        console.log("shirts ", shirts )
                
         useEffect(()=>{
             if(id){
-                const  temp=products.find(product=>product.id===id);
-            temp    &&  setCurrent(temp ) ;
+               
+              console.log("pdt", products)
+                const  temp=products.find(
+                  (product)=>product.id===Number(id));
+            temp &&  setCurrent(temp ) ;
 
+            console.log("current",temp)
             }
         },[id,products])
-        console.log("current",current)
+   
   console.log(product)
 
   return (
@@ -33,8 +60,8 @@ export default function Productdetail({product}) {
       <div></div>
       <div>
         <p>URBANTOUCH</p>
-        <h4>LT Green Checkerd Shirt</h4>
-        <p>Regular priceRs. 1,699.00</p>
+        <h4>{current.title}</h4>
+        <p>{current.price}</p>
         <p>Tax included.</p>
         <p>Size</p>
         <div>
@@ -52,7 +79,9 @@ export default function Productdetail({product}) {
 
         <p>Quantity</p>
         <div>
-            <button>1</button>
+            <button  onClick={ handleadd} >add</button>
+            <h2>{count}</h2>
+            <button  onClick={ handlesub} >sub</button>
 
       </div>
 
