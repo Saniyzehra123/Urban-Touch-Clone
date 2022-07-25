@@ -19,11 +19,12 @@ export default function Navbar() {
       <div className='secondnav'> 
        <div className='urbannav'>
         <IoIosSearch  style={{width:"20px", height :"40px", marginLeft:"2%"}}/>
-        <img 
+     <Link to="/" > 
+     <img    className="touch"
         src='https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch-logo_250x.jpg?v=1647581012' alt='logo' className='logo'/>
-      
+      </Link>  
        <Link to= "/login" ><FaRegUser   style={{width:"20px", height :"40px",color:"black", marginLeft:"25%"}}/></Link>
-       <BsHandbag  style={{width:"20px", height :"40px", marginLeft:"20px" }}/>
+      <Link to="/information" > <BsHandbag  style={{width:"20px", height :"40px", marginLeft:"20px" ,color:"black"}}/></Link>
        
         </div>
 

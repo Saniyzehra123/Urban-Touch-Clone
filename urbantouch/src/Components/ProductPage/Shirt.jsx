@@ -28,11 +28,12 @@ export default function Shirt() {
         shirts.map((shirt,index)=>{
             return(
                 <div key={index}>
-                <NavLink to={`/shirt/${shirt.id}`}>
+                <NavLink to={`/${"Shirts"}/${shirt.id}`}>
                 <img src={shirt.image} alt=""/>
+                </NavLink>
                     <h3>{shirt.title}</h3>
                     <p>{shirt.price}</p>
-                </NavLink>
+                 
                 
                 </div>
             )

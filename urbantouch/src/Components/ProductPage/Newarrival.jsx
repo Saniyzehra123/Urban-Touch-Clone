@@ -30,13 +30,13 @@ export default function Newarrival() {
                     return(
                         <div key={index}>
                         
-                                <NavLink to={`/newarrival/${product.id}`}>
+                                <NavLink to={`/${"newarrival"}/${product.id}`}>
                                 <img src={product.image} alt=""/>
-                                <h3>{product.title}</h3>
-                                <p>{product.price}</p>
+                                
                                 </NavLink>
                         
-                       
+                                <h3>{product.title}</h3>
+                                <p>{product.price}</p>
                         
                         
                         </div>

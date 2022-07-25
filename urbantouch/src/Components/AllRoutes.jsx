@@ -1,11 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Blog from './Blog'
+import Information from './Checkout/Information'
+import PaymentPage from './Checkout/PaymentPage'
+import Shipping from './Checkout/Shipping'
 import Fotter from './Fotter'
 import Homepage from './Homepage'
  
 import Login from './Login'
 import Navbar from './Navbar'
+import Addcartpopup from './ProductPage/Addcartpopup'
 import Denims from './ProductPage/Denims'
 import Newarrival from './ProductPage/Newarrival'
 import Productdetail from './ProductPage/Productdetail'
@@ -32,12 +36,15 @@ export default function AllRoutes() {
         <Route path="/shorts" element={<Shorts/>} />
         <Route path="/sweater" element={<Sweater/>} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/information/shipping" element={<Shipping/>} />
+        <Route path="/information/shipping/payment" element={<PaymentPage/>} />
 
-        {/* <Route path="/productdetails" element={<Productdetail/>} /> */}
-        <Route path="/newarrival/:id" element={<Productdetail/>} />
+        <Route path="/:end/:id" element={<Productdetail/>} />
+        {/* <Route path="/addtocartpopup" element={<Addcartpopup/>} /> */}
         <Route path="/shirt/:id" element={<Productdetail/>} />
         
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/information" element={<Information/>} />
 
       </Routes>
       <div>

@@ -6,6 +6,7 @@
     text-align: left;
     padding: 1%;
     padding-left: 5%;
+    
 }
 .foottitle{
     
@@ -47,6 +48,7 @@
 .subs>h1{
     font-size: 20px;
     font-weight: 340;
+    margin-left: -19%;
 }
 .subs>input{
     width: 150%;
@@ -58,8 +60,21 @@
  
 .icon{
     margin-top:20px;
-    
+
+ 
 }
-.payment>div>img{
+.paymentcardsfotter>div{
+    border: 1px solid #000; 
+    margin-left: 1%; 
+    height: 50px;
+   margin-top: 1%;
+}
+.paymencardsfotter>div>img{
   margin-left: 20px;
+  border: 1px solid #000;
+}
+.paymentcardsfotter>div>p{
+    color: rgb(158, 155, 155);
+    font-size: 12px;
+    font-weight: 400;
 }
