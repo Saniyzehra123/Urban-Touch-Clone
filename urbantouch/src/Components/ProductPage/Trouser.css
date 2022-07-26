@@ -7,7 +7,7 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 25px;
 }
-.trousercontainer>div>img{
+.trouserimg{
     width: 105%;
     height: 80%;
 }

@@ -1,18 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
 import {GrPlayFill} from 'react-icons/gr'
 import "./Homepage.css"
+import axios from 'axios'
 
 
 
 export default function Homepage() {
 
  const [video,setvideo]= useState("false")
+ const [home,sethome]= useState([]);
+
+ useEffect(()=>{
+  axios.get("http://localhost:8080/home").then(res=>{
+    sethome(res.data)
+  }
+  ).catch(err=>{
+    console.log(err)
+  })
+  },[])
+
   return (
     <div>
       
      <div className='urbanpic'>
-      <img  width="100%" height="700px"  
+      <img  width="100%" height="700px"    
       src="https://cdn.shopify.com/s/files/1/2381/1785/files/web_banner.jpg?v=1654243325&width=1500" alt="" />
     
     
@@ -23,17 +35,38 @@ export default function Homepage() {
 
     </div>
 
-    <h2>Featured products</h2>
-    <div>
+    <h2 className='featuretitle'>Featured products</h2>
       
+      <div className='feature'>
+      {
+        home.map((item)=>{
+          return(
+            
+              <div className="prodimgs" >
+                <img src={item.image} alt="img"/>
+                <img src={item.image2} alt="img" className='flip'/>
+               
+                <p  >{item.title}</p>
+                <p>{item.price}</p>
+              </div>
+           
+          )
+        }
+
+        )
+      }
+      </div>
+
+    <div className="moreh">
+    <p   >What's More Casual</p>
     </div>
-    <h2 className="moreh" >What's More Casual</h2>
+    
     <div className='more'>
       
       <div className='moreleft'>
         <img  width="123%"   height="80%" 
         src='https://cdn.shopify.com/s/files/1/2381/1785/collections/TSHIRTS.jpg?v=1647584051&width=750' alt='' />
-     <p>T SHIRT</p>
+     <p className='tshirtname'>T SHIRT</p>
       </div>
       <div className='moreright'>
 
@@ -57,7 +90,7 @@ export default function Homepage() {
    <img width="60%"   
     src="https://cdn.shopify.com/s/files/1/2381/1785/collections/DENIMS.jpg?v=1600681160&width=750" alt="" />
 
-    <p>DENIMS</p>
+    <p className='denimsname'>DENIMS</p>
       </div>
     </div>
 

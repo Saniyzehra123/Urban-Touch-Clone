@@ -31,7 +31,7 @@ export default function Newarrival() {
                         <div key={index}>
                         
                                 <NavLink to={`/${"newarrival"}/${product.id}`}>
-                                <img src={product.image} alt=""/>
+                                <img src={product.image} alt="" className='newimg'/>
                                 
                                 </NavLink>
                         

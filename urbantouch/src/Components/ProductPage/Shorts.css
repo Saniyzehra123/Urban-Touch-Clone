@@ -7,7 +7,7 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 25px;
 }
-.shortscontain>div>img{
+.shortimg{
     width: 105%;
     height: 70%;
 }

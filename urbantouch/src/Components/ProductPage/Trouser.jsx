@@ -1,7 +1,7 @@
  
   import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { getTrouserData  } from '../../Redux/Trouser/action';
  import "../ProductPage/Trouser.css";
 
@@ -29,7 +29,9 @@ export default function Trouser() {
         trousers.map((trouser,index)=>{
             return(
                 <div key={index}>
-                    <img src={trouser.image} alt=""/>
+                  <NavLink to={`/${"trousers"}/${trouser.id}`}>
+                    <img src={trouser.image} alt="" className='trouserimg'/>
+                  </NavLink>
                     <h3>{trouser.name}</h3>
                     <p>{trouser.price}</p>
                 </div>

@@ -2,7 +2,7 @@
  
 import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { getDenimsData } from '../../Redux/Denims/action';
 import "../ProductPage/Denims.css";
 export default function Denims() {
@@ -27,7 +27,9 @@ export default function Denims() {
         denims.map((denim,index)=>{
             return(
                 <div key={index} >
-                    <img src={denim.image} alt=""/>
+                  <NavLink to={`/${"denim"}/${denim.id}`}>
+                    <img src={denim.image} alt="" className='denimsimg'/>
+                  </NavLink>
                     <h3>{denim.title}</h3>
                     <p>{denim.price}</p>
                 </div>

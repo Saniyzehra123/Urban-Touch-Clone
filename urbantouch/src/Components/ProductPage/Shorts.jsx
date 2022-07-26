@@ -1,7 +1,7 @@
   
 import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {  getShortsData } from '../../Redux/Shorts/actions';
 import  "../ProductPage/Shorts.css";
 
@@ -33,7 +33,9 @@ export default function Shorts() {
         shorts.map((short,index)=>{
             return(
                 <div key={index}>
-                    <img src={short.image} alt=""/>
+                  <NavLink to={`/${"short"}/${short.id}`}>
+                    <img src={short.image} alt="" className='shortimg'/>
+                  </NavLink>
                     <h3>{short.title}</h3>
                     <p>{short.price}</p>
                 </div>

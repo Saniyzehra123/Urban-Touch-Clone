@@ -1,5 +1,5 @@
 .fotter{
-    border : 1px solid #000;
+    /* border : 1px solid #000; */
     display: flex;
     margin-top:2%;
     justify-content: left;
@@ -38,7 +38,7 @@
     margin-left: -72%;
 }
 .subscribe{
-    border : 1px solid #000;
+    /* border : 1px solid #000; */
     display: flex;
     justify-content: space-around;
 }
@@ -53,7 +53,7 @@
 .subs>input{
     width: 150%;
     height: 40px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     font-size: 20px;
     padding-left: 10px;
 }
@@ -64,14 +64,14 @@
  
 }
 .paymentcardsfotter>div{
-    border: 1px solid #000; 
+    /* border: 1px solid #000;  */
     margin-left: 1%; 
     height: 50px;
    margin-top: 1%;
 }
 .paymencardsfotter>div>img{
   margin-left: 20px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .paymentcardsfotter>div>p{
     color: rgb(158, 155, 155);

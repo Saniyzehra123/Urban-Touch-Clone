@@ -5,7 +5,7 @@
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_af873af6-9b52-4216-8ab6-4ec5fc3f84c4.jpg?v=1651144737",
         "title":"LT Green Checkerd Shirt",
         "price":"eRs. 1,699.00",
-            "button":"S"
+        "button":"S"
     },
     {
         "id":2,
@@ -13,16 +13,15 @@
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_f235550f-d4f1-4c32-a33b-236cd720bc29.jpg?v=1651925450",
         "title":" White Checkerd Shirt",
         "price":" Rs. 1,699.00",
-            "button":"S"
+        "button":"S"
     },
     {
         "id":3,
         "image":"https://cdn.shopify.com/s/files/1/2381/1785/products/1_eea58c17-a4c0-46c4-80dc-481fbb30eadc.jpg?v=1651925527&width=600",
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_f4990f56-94da-4a85-ab00-9f25ccb6c8e2.jpg?v=1651925526",
         "title":" Brown Checkerd Shirt",
-        "price":" Rs. 1,699.00"
-
-       ,             "button":"S"
+        "price":" Rs. 1,699.00",            
+        "button":"S"
     },
     {
         "id":4,
@@ -30,7 +29,7 @@
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_dcb1b37b-52df-4b97-8470-d2d9def1a97c.jpg?v=1651925581",
         "title":" Grey Checkerd Shirt",  
         "price":"Rs. 1,699.00",
-            "button":"S"
+        "button":"S"
     },
     {
         "id":5,
@@ -38,7 +37,7 @@
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_d8610ea5-a02f-45a2-80ff-7e5a64f89ba6.jpg?v=1651925481&width=600",
         "title":"DK Blue Stripes Shirt",
         "price":"Rs. 1,699.00",
-            "button":"S"
+        "button":"S"
     },
     {
         "id":6,
@@ -46,7 +45,7 @@
         "image2":" https://cdn.shopify.com/s/files/1/2381/1785/products/2_fbfaef63-4f67-4266-b90d-c761e3ea7dee.jpg?v=1651925617&width=600",
         "title":" DK Blue Plain Shirt",
         "price":"Rs. 1,499.00",
-            "button":"S"
+        "button":"S"
     },
     {
         "id":7,
@@ -54,7 +53,7 @@
         "image2":"https://cdn.shopify.com/s/files/1/2381/1785/products/2_eb532f7d-a303-432f-ae13-a7c3e240b293.jpg?v=1651925399&width=600",
         "title":"Navy Printed Shirt",
         "price":"Rs. 1,399.00",
-            "button":"S"
+         "button":"S"
     },
     {
         "id":8,

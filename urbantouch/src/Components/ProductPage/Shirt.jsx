@@ -29,7 +29,7 @@ export default function Shirt() {
             return(
                 <div key={index}>
                 <NavLink to={`/${"Shirts"}/${shirt.id}`}>
-                <img src={shirt.image} alt=""/>
+                <img src={shirt.image} alt="" className='shirtimg'/>
                 </NavLink>
                     <h3>{shirt.title}</h3>
                     <p>{shirt.price}</p>

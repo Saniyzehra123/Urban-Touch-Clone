@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { getSweaterData } from '../../Redux/Sweaters/action';
 import "../ProductPage/sweater.css";
 
@@ -27,7 +27,9 @@ export default function Sweater() {
         sweater.map((sweater,index)=>{
             return(
                 <div key={index}>
-                    <img src={sweater.image} alt=""/>
+                  <NavLink to={`/${"sweater"}/${sweater.id}`}>
+                    <img src={sweater.image} alt="" className='sweaterimg'/>
+                  </NavLink>
                     <h3>{sweater.title}</h3>
                     <p>{sweater.price}</p>
                 </div>

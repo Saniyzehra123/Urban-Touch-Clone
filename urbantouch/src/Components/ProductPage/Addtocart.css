@@ -1,5 +1,5 @@
 .addtocart{
-    border: 1px solid black;
+    /* border: 1px solid black; */
    
     padding-left: 5%;
     width:50%
@@ -11,7 +11,7 @@
 .image{
     width:60%;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .addname{
     text-align: left;
@@ -35,7 +35,7 @@ height: 90%;
     margin-right: 40%;
     height: 50px;
     margin-top: 2%;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     cursor: pointer;
 }

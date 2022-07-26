@@ -26,6 +26,7 @@
 }
 .yourtext{
     justify-content: space-between; 
+    border: 1px solid red;
 }
 .yourtext>p{
     font-size: 13px;
@@ -44,7 +45,7 @@
 }
 .yourimg{
     display: flex;
-
+    border: 1px solid red;
 }
 .yourimg>div{
     margin-left: 10%;
@@ -65,14 +66,18 @@
      
 }
 .yourquant{
+    border: 1px solid red;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     /* margin-top: 3%; */
     margin-left: 25%;
+     
 }
-/* .yourquant>div{
-    display: flex;   
-} */
+.yourquant>div{
+    display: flex; 
+    padding-left: 10pc;  
+}
 .delete{
     margin-left: 20%;
     margin-top: 30%;
@@ -82,11 +87,38 @@
     /* margin-top: 3%; */
     margin-left: 35%;
 }
-.subtotal{
-    margin-left: 70%;
-    /* display: flex; */
+.yourtotal>p{
+    padding-left: 15pc;  
 }
-.subtota>div{
- 
+.subtotals{
+    margin-left: 60%;
+    
+}
+.subtotals>div{
+    display: flex;
  margin-left: 30%;
+ 
+}
+ .subtotalsprice{
+    padding-left: 35%;   
+    font-size: 20px;
+ }
+ .subtotalsprices{
+    padding-top:2%;
+    padding-left: 4%;
+ }
+ 
+.subtax{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(10, 10, 10);
+ 
+   
+}
+.subcheck{
+    width:80%;
+    height: 50px;
+    font-size: 19px;
+    background-color: black;
+    color:white
 }

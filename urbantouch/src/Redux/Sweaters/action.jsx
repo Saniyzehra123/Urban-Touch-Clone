@@ -29,7 +29,7 @@ export const getsweatersFailure = (payload) => {
 export const getSweaterData =(payload)=>{
     return (dispatch) => {
         dispatch(getsweaters(payload));
-        axios.get(' http://localhost:8080/sweaters')
+        axios.get('http://localhost:8080/sweaters ')
             .then(res => {
                 dispatch(getsweatersSuccess(res.data));
             }).catch(err => {

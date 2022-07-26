@@ -27,10 +27,7 @@ export default function Yourcart() {
            <p>RS:1388</p>
            <p>Size:</p>
            </div>
-             
-      </div>
-
-        <div className='yourquant'>
+           <div className='yourquant'>
             <div>
                 <p>quant</p>
                 <div className='delete'> 
@@ -38,27 +35,32 @@ export default function Yourcart() {
            </div>
       </div>
       </div>
+
+       
       <div className='yourtotal'>
         <p>total</p>
       </div>
+      </div>  
   
       </div>
       
-    </div>
-    <hr/>
-      <div className='subtotal'>
-     
-         <p>Subtotal</p>
-         <p>Rs. 3,098.00</p>
-       
-         <div> 
+
+      <hr/>
+      <div className='subtotals'>
+     <div> 
+         <p className='subtotalsprice'>Subtotal</p>
+         <p  className='subtotalsprices' >Rs. 3,098.00</p>
+         </div>
+         <div className='subtax'> 
          <p>Tax included and shipping calculated at checkout</p>
          </div>
          <br/>
          <div> 
-     <button>Checkout</button>
+     <button className='subcheck'>Check out</button>
      </div>
       </div>
+    </div>
+     
     </div>
   )
 }

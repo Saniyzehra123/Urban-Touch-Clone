@@ -7,7 +7,7 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 25px;
 }
-.sweatercontain>div>img{
+.sweaterimg{
     width: 105%;
     height: 80%;
 }

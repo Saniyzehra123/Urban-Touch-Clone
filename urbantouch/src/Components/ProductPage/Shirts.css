@@ -7,7 +7,7 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 25px;
 }
-.shirtcontain>div>img{
+.shirtimg{
     width: 105%;
     height: 80%;
 }

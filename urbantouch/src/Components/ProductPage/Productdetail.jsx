@@ -6,6 +6,12 @@ import "../ProductPage/Productdetail.css"
 import { useDispatch, useSelector } from 'react-redux'
 import {  getMensData} from '../../Redux/Newarrival/action';
 import { getShirtData } from '../../Redux/Shirt/action';
+import { getTShirtData } from '../../Redux/T-shirt/action';
+import { getTrouserData  } from '../../Redux/Trouser/action';
+import { getDenimsData } from '../../Redux/Denims/action';
+import {  getShortsData } from '../../Redux/Shorts/actions';
+import { getSweaterData } from '../../Redux/Sweaters/action';
+
 import axios from 'axios';
 
 export default function Productdetail({product}) {
@@ -28,6 +34,16 @@ setcount(count-1)
 }
 
   
+  useEffect(()=>{
+    dispatch(getMensData())
+    dispatch(getShirtData())
+    dispatch(getTShirtData())
+    dispatch(getTrouserData())
+    dispatch(getDenimsData ())
+    dispatch(getShortsData())
+    dispatch(getSweaterData())
+
+  },[])
 
   const {id,end}=useParams();
   console.log("id",id)
