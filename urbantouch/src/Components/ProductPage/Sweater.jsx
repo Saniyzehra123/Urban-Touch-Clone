@@ -19,15 +19,15 @@ export default function Sweater() {
 
   return (
     <div>
-   <h1 className='heading'> SWEATERS</h1>
-      <h2 className='subtitle'>   Features sweaters collection from urbantouch, Choose your favourite outfit <br/>from a wide range of collection.</h2>
+   <h1 className='heading'>SWEATERS</h1>
+      <h2 className='subtitle'> Features sweaters collection from urbantouch, Choose your favourite outfit <br/>from a wide range of collection.</h2>
 
     <div className='sweatercontain'>
       {
         sweater.map((sweater,index)=>{
             return(
                 <div key={index}>
-                  <NavLink to={`/${"sweater"}/${sweater.id}`}>
+                  <NavLink to={`/${"sweaters"}/${sweater.id}`}>
                     <img src={sweater.image} alt="" className='sweaterimg'/>
                   </NavLink>
                     <h3>{sweater.title}</h3>

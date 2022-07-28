@@ -18,6 +18,8 @@ import Shorts from './ProductPage/Shorts'
 import Sweater from './ProductPage/Sweater'
 import Trouser from './ProductPage/Trouser'
 import Tshirt from './ProductPage/Tshirt'
+import Yourcart from './ProductPage/Yourcart'
+import Signup from './Signup'
 
 export default function AllRoutes() {
   return (
@@ -34,7 +36,7 @@ export default function AllRoutes() {
         <Route path="/trouser" element={<Trouser/>} />
         <Route path="/denims" element={<Denims/>} />
         <Route path="/shorts" element={<Shorts/>} />
-        <Route path="/sweater" element={<Sweater/>} />
+        <Route path="/sweaters" element={<Sweater/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/information/shipping" element={<Shipping/>} />
         <Route path="/information/shipping/payment" element={<PaymentPage/>} />
@@ -42,9 +44,11 @@ export default function AllRoutes() {
         <Route path="/:end/:id" element={<Productdetail/>} />
         {/* <Route path="/addtocartpopup" element={<Addcartpopup/>} /> */}
         <Route path="/shirt/:id" element={<Productdetail/>} />
+        <Route path="/yourcart" element={<Yourcart/>} />
         
-        <Route path="/blog" element={<Blog/>} />
+       
         <Route path="/information" element={<Information/>} />
+        <Route path="/signup" element={<Signup/>} />
 
       </Routes>
       <div>

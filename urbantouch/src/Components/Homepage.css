@@ -11,8 +11,9 @@
 .imgtext> p{
     text-align: center;
     color:white;
-    font-size: 40px;
+    font-size: 45px;
     position: relative;
+   font-family:  Geneva,   sans-serif;
    
         top: -270px;
         /* background-color: rgba(0,0,0,0.5); */
@@ -91,6 +92,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 25px;
+        cursor: pointer;
 }
 .feature>div>img{
     width: 120%;
@@ -197,5 +199,5 @@
     display: none;
 }
 .urbanpic{
-    margin-top:15%
+    margin-top:13%
 }

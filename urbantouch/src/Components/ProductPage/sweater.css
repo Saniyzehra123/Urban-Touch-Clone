@@ -1,5 +1,5 @@
 .sweatercontain{
-    margin-top: 5%;
+    margin-top: 1%;
     display: grid;
     margin-left: 5%;
     width: 90%;
@@ -16,7 +16,7 @@
     font-weight: 350;
     color: #000;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 2%;
     /* margin-top: 5%; */
 }
 .subtitle{

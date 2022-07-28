@@ -24,7 +24,7 @@ export const getNewArrivalFailure = (payload)=> ({
 export const getMensData =(payload)=>{
     return (dispatch) => {
         dispatch(getNewArrival());
-        axios.get(`http://localhost:8080/newarrival`,{
+        axios.get(`https://urbantouchclone.herokuapp.com/products`,{
             params:{
                 ...payload,
             }
@@ -39,3 +39,6 @@ export const getMensData =(payload)=>{
     }
     }
  
+    
+     
+    

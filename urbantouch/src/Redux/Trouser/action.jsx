@@ -25,7 +25,7 @@ export const getTrouserFailure = (payload)=> ({
 export const getTrouserData =(payload)=>{
     return (dispatch) => {
         dispatch(getTrouser());
-        axios.get(`http://localhost:8080/trousers`,{
+        axios.get(`https://urbantouchclone.herokuapp.com/products3`,{
             params:{
                 ...payload,
             }

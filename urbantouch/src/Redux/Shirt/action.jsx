@@ -19,7 +19,7 @@ export const getShirtFailure = (payload)=> ({
 export const getShirtData =(payload)=>{
     return (dispatch) => {
         dispatch(getShirt());
-        axios.get(`http://localhost:8080/Shirts`,{
+        axios.get(`https://urbantouchclone.herokuapp.com/products2`,{
             params:{
                 ...payload,
             }

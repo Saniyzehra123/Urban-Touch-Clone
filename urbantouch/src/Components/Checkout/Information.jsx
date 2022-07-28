@@ -116,7 +116,16 @@ export default function Information() {
 
     ///coupon code
     <div className='left'>
-    <hr/>
+     
+    <div className='couponbox'> 
+  <div className='coupimg'>
+
+   </div>
+   <div className='couponname'>
+
+   </div>
+   </div>
+    <hr className='hr'/>
      <input placeholder='Discount code' className='discount' />
         <button className='apply'>Apply</button>
            <hr/>

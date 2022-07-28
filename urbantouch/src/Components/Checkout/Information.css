@@ -108,6 +108,11 @@ margin-top: 10px;
 .discount{
     width :50%;
     margin-left: -10%;
+    margin-top:5%
+}
+.hr{
+    
+    margin-top: 10px;
 }
 .apply{
     width:20%;
@@ -128,4 +133,22 @@ margin-top: 10px;
 }
 .total>div>p:nth-child(2){
     margin-left: 15pc;
+}
+.couponbox{
+    display: flex;
+    border:1px solid blue;
+    width:90%;
+    height:145px;
+}
+.coupimg{
+    width: 60%;
+    height: 100%;
+    border:1px solid rgb(255, 0, 0);
+}
+.couponname{
+    width: 30%;
+    height: 100%;
+    border:1px solid blue;
+     margin-left: 10%;
+    
 }

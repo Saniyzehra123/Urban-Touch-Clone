@@ -5,7 +5,9 @@ import {IoLogoFacebook, IoLogoInstagram, IoLogoTwitter} from 'react-icons/io'
 export default function Fotter() {
   return (
     <div>
+           <hr/>
         <div className='fotter'>
+      
       <div>
         <h1 className='foottitle'>Quick links</h1>
         <p> Search</p>

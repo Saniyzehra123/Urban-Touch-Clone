@@ -13,7 +13,7 @@ export default function Navbar() {
     <div  className= "navcontainer">
       <div className='toLinknav'>
         <h1>Welcome to our store</h1> 
-        <hr/>
+  
         </div>
         
       <div className='secondnav'> 
@@ -24,34 +24,26 @@ export default function Navbar() {
         src='https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch-logo_250x.jpg?v=1647581012' alt=''  />
       </Link>  
        <Link to= "/login" ><FaRegUser   style={{width:"20px", height :"40px",color:"black", marginLeft:"25%"}}/></Link>
-      <Link to="/information" > <BsHandbag  style={{width:"20px", height :"40px", marginLeft:"20px" ,color:"black"}}/></Link>
+      <Link to="/yourcart" ><BsHandbag  style={{width:"20px", height :"40px", marginLeft:"20px" ,color:"black"}}/></Link>
        
         </div>
 
      <div className='links' >
     
-          <Link to= "/newarrival">New Arrivals</Link>
-          <Link to= "/shirt">Shirts</Link>
-          <Link to="/tshirt">T-Shirts</Link>
-          <Link to="/trouser">Trousers</Link>
-          <Link to="/denims">Denims</Link>
-          <Link to="/shorts">Shorts</Link>
-          <Link to="/sweater">Sweaters</Link>
+          <Link to= "/newarrival"  style={{ color:"black" ,textDecoration:"none"}}>New Arrivals</Link>
+          <Link to= "/shirt" style={{ color:"black",textDecoration:"none"}}>Shirts</Link>
+          <Link to="/tshirt" style={{ color:"black",textDecoration:"none"}}>T-Shirts</Link>
+          <Link to="/trouser" style={{ color:"black",textDecoration:"none"}}>Trousers</Link>
+          <Link to="/denims" style={{ color:"black",textDecoration:"none"}}>Denims</Link>
+          <Link to="/shorts" style={{ color:"black",textDecoration:"none"}}>Shorts</Link>
+          <Link to="/sweaters" style={{ color:"black",textDecoration:"none"}}>Sweaters</Link>
           {/* <Link>Stores</Link> */}
-          <Link to="/blog"> Blog </Link>
+          <Link to="/blog" style={{ color:"black",textDecoration:"none"}}> Blog </Link>
           {/* <Link to="/productdetails">Product Details</Link> */}
         
-          {/* <Link >New Arrivals</Link>
-          <Link>Shirts</Link>
-          <Link> T-Shirts</Link>
-          <Link>Trousers</Link>
-          <Link>Denims</Link>
-          <Link>Shorts</Link>
-          <Link>Sweaters</Link>
-          <Link>Stores</Link>
-          <Link>Blog</Link> */}
+         
         </div>
-      <hr/>
+     
      </div>
      </div>
   )

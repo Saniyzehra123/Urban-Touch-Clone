@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../ProductPage/Yourcart.css"
 import {GrAdd} from 'react-icons/gr'
 import {GrSubtract} from 'react-icons/gr'
 import {RiDeleteBinLine} from 'react-icons/ri'
+import { useSelector } from 'react-redux'
 
 export default function Yourcart() {
+
+const  cart= useSelector( store =>  store.cartreducer.cart);
+
+console.log("raj",cart)
+ 
   return (
     <div className='your'> 
     <div className='yourcontainer'>
@@ -20,8 +26,14 @@ export default function Yourcart() {
       <hr/>
 
       <div>
-        <div className='yourimg'>
-            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+
+        {
+          cart.map((e)=>(
+            <div  >
+                  <div className='yourimg'>
+
+                  <img src={e.image} alt=""/>
+          
            <div>
            <p>gff</p>
            <p>RS:1388</p>
@@ -41,6 +53,29 @@ export default function Yourcart() {
         <p>total</p>
       </div>
       </div>  
+            </div>
+        ))}
+        {/* <div className='yourimg'>
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
+           <div>
+           <p>gff</p>
+           <p>RS:1388</p>
+           <p>Size:</p>
+           </div>
+           <div className='yourquant'>
+            <div>
+                <p>quant</p>
+                <div className='delete'> 
+           < RiDeleteBinLine/>
+           </div>
+      </div>
+      </div>
+
+       
+      <div className='yourtotal'>
+        <p>total</p>
+      </div>
+      </div>   */}
   
       </div>
       

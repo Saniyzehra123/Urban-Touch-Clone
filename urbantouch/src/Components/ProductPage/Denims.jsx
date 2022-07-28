@@ -27,7 +27,7 @@ export default function Denims() {
         denims.map((denim,index)=>{
             return(
                 <div key={index} >
-                  <NavLink to={`/${"denim"}/${denim.id}`}>
+                  <NavLink to={`/${"denims"}/${denim.id}`}>
                     <img src={denim.image} alt="" className='denimsimg'/>
                   </NavLink>
                     <h3>{denim.title}</h3>

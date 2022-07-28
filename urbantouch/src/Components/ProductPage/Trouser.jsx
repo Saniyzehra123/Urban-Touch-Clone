@@ -21,6 +21,7 @@ export default function Trouser() {
 
   return (
     <div>
+       
        <h1 className='heading'> TROUSERS</h1>
       <h2 className='subtitle'>  Features Trouser collection from urbantouch, Choose your favourite outfit    <br/>  from a wide range of collection.</h2>
    

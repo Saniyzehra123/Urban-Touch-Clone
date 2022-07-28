@@ -33,7 +33,7 @@ export default function Shorts() {
         shorts.map((short,index)=>{
             return(
                 <div key={index}>
-                  <NavLink to={`/${"short"}/${short.id}`}>
+                  <NavLink to={`/${"shorts"}/${short.id}`}>
                     <img src={short.image} alt="" className='shortimg'/>
                   </NavLink>
                     <h3>{short.title}</h3>

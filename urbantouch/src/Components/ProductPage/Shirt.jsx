@@ -20,7 +20,7 @@ export default function Shirt() {
       console.log("shirt",shirts)
   return (
     <div> 
-        <h1 className='heading'> SHIRTS</h1>
+        <h1 className='heading'>SHIRTS</h1>
       <h2 className='subtitle'> features shirts from urbantouch. Choose the best outfit from a wide range  <br/> of collection.</h2>
 
     <div className='shirtcontain'>

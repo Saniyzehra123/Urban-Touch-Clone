@@ -4,7 +4,7 @@ import React from 'react'
 export default function Blog() {
   return (
     <div className="blogcon">
-      <h4 className='blogname'>News</h4>
+      <h1 className='blogname'>News</h1>
 
       <div className="blog">
         <div className="blog-img">
@@ -24,13 +24,13 @@ export default function Blog() {
     </div>
 
     <div className='subblog'>
-      <div>
+      <div  className='rightblog'>
         <img width="90%" src='https://cdn.shopify.com/s/files/1/2381/1785/articles/BLOG_OCT_3_brunch_fashion.jpg?v=1542705591&width=720' alt="blog-img" />
        <p>The evolution of Brunch Fashion</p>
        <p>The term ‘Brunch’ evolved from a combination of Breakfast<br/> and Lunch. This would imply a relaxed session of grazing <br/>around a spread that would be filling enough for you to ...</p>
       </div>
-      <div>
-        <img width="78%" height="200px" src='https://cdn.shopify.com/s/files/1/2381/1785/articles/BLOG_OCT_2_spending_habits.jpg?v=1542355330&width=720' alt="blog-img" />
+      <div className='rightblog'>
+        <img width="78%" height="310px" src='https://cdn.shopify.com/s/files/1/2381/1785/articles/BLOG_OCT_2_spending_habits.jpg?v=1542355330&width=720' alt="blog-img" />
       <p>Spending in the name of Fashion</p>
       <p>Ever since currencies were invented, human beings haven’t<br/> stopped shopping. The barter system of payment has in more<br/> recent times been replaced with the convenience of swiping <br/>debit and credit cards.</p>
       </div>
@@ -57,13 +57,13 @@ export default function Blog() {
 
 
     <div className='subblog'>
-      <div>
+      <div className='rightblog'>
         <img width="90%" src=' https://cdn.shopify.com/s/files/1/2381/1785/articles/BLOG_responsible_buying.jpg?v=1538551498&width=720' alt="blog-img" />
        <p> “What am I going to wear today?” - <br/>rethinking o...</p>
        <p> Of all the pollutants on earth, the Fashion and Textile industry<br/> is known to be the second largest contributor (next only to the <br/>oil industry). Staggering estimates show the industry</p>
       </div>
-      <div>
-        <img width="78%" src=' https://cdn.shopify.com/s/files/1/2381/1785/articles/BLOG_color_psychology.jpg?v=1537964297&width=720' alt="blog-img" />
+      <div className='rightblog'>
+        <img width="78%"  height="300px" src=' https://cdn.shopify.com/s/files/1/2381/1785/articles/BLOG_color_psychology.jpg?v=1537964297&width=720' alt="blog-img" />
       <p> Colour Psychology and the power of <br/>dressing</p>
       <p> Colour plays a crucial part in how we see ourselves and how <br/> the world sees us everyday. In a professional environment, it <br/>can send out right or wrong signals and...</p>
       </div>
