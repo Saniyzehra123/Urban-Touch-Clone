@@ -9,6 +9,7 @@ import { denimsreducer } from "./Denims/reducer";
 import {shortreducer } from "./Shorts/reducer";
 import {sweaterSreducer} from "./Sweaters/reducer";
 import reducer from "./auth/reducer";
+import { signupreducer } from "./Siginup/reducer";
 import cartreducer from "./Cart/reducer";
 // const composeEnhancers =
 //   typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
@@ -35,6 +36,7 @@ const rootReducer = combineReducers({
     sweaterSreducer,
     shortreducer ,
    reducer,
+   signupreducer,
    cartreducer
 });
 export const store =  legacy_createStore(rootReducer, enhancer);

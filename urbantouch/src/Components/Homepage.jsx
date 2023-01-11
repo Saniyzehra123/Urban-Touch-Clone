@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player'
 import {GrPlayFill} from 'react-icons/gr'
 import "./Homepage.css"
 import axios from 'axios'
+import {Link} from "react-router-dom";
 
 
 
@@ -23,7 +24,7 @@ export default function Homepage() {
   const handleplay=()=>{
     setplay(true)
     setvideo(!video)
-
+    
   }
    
   return (
@@ -49,10 +50,9 @@ export default function Homepage() {
           return(
             
               <div className="prodimgs">
-                <img src={item.image} alt="img"/>
-                <img src={item.image2} alt="img" className='flip'/>
-               
-                <p  >{item.title}</p>
+                  <Link to= "/newarrival">  <img  src={item.image} alt="img"  className="fecimg" /> </Link>  
+                <img src={item.image2} alt="img" className='flip'/>  
+                <p>{item.title}</p>
                 <p>{item.price}</p>
               </div>
            
@@ -99,28 +99,21 @@ export default function Homepage() {
     <p className='denimsname'>DENIMS</p>
       </div>
     </div>
-
-    
-    {/* <iframe src=" https://youtu.be/ywX9rSu38wc" title="W3Schools Free Online Web Tutorials"> */}
-
  
-    <div  className='video'   onClick={handleplay }>
+    <div  className='video'  onClick={handleplay }>
      
      {video?  <img src="https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch_1_96b59a43-e1df-4631-8ef2-3e04198c1e3d.jpg?v=1519987513&width=1500" alt="" /> : <ReactPlayer controls url='https://youtu.be/ywX9rSu38wc' width='100%' height='100%' /> }
      
      
      <div> 
-      { play?  <div className='iconplay'>  <GrPlayFill/> </div> : false  }
-
       <div className='iconplay'> 
       <GrPlayFill/>
      
       </div>
       </div>
+
     </div>
-     {/* </iframe> */}
-  
-     
+    
     </div>
   )
 }

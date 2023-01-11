@@ -447,8 +447,8 @@
       "image": " https://cdn.shopify.com/s/files/1/2381/1785/products/18MACDCD0008-1.jpg?v=1575550178&width=360",
       "title": "  Bottle green casual mid raise trouser",
       "price": 1899
-    },
-    {}
+    }
+ 
   ],
   "denims": [
     {
@@ -572,22 +572,34 @@
   ],
   "cart": [
     {
-      "id": 2,
-      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0049.jpg?v=1592294142&width=360",
-      "title": "Blue Polo T-Shirt",
-      "price": 999
-    },
-    {
-      "id": 12,
-      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/18MYSJTR0031.1.jpg?v=1575552273&width=360",
-      "title": "ecru casual mid raise trouser",
+      "id": 5,
+      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/1_38b183c1-9762-45d8-bbed-991d4756de6c.jpg?v=1651925480&width=600",
+      "title": "DK Blue Stripes Shirt",
       "price": 1699
     },
     {
-      "id": 3,
-      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/18NOACSW0003.1.jpg?v=1575550210&width=360",
-      "title": "charcol Melange Sweater",
-      "price": 1599
+      "id": 14,
+      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/LRCRKAVPACK_1.jpg?v=1575551116&width=360",
+      "title": " PACK OF 3 T SHIRTS -Wine, Grey Melange, Navy.",
+      "price": 999
+    },
+    {
+      "id": 6,
+      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/UOFEFCTS0045.jpg?v=1592293890&width=360 ",
+      "title": " Navy Polo T-Shirt",
+      "price": 999
+    },
+    {
+      "id": 2,
+      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/1_25861418-298e-4904-8b47-505c91c17742.jpg?v=1651925449&width=600",
+      "title": " White Checkerd Shirt",
+      "price": 1699
+    },
+    {
+      "id": 11,
+      "image": "https://cdn.shopify.com/s/files/1/2381/1785/products/1_925ffe60-1b4b-42b2-8e46-4f8dcbacbbce.jpg?v=1651925295&width=360",
+      "title": "Grey Printed Shirt",
+      "price": 1399
     }
   ]
 }

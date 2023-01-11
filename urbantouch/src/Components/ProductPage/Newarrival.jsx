@@ -38,8 +38,9 @@ const  currentPosts = products.slice(indexOfFirstPost, indexOfLastPost);
 
 console.log("raj",products.length)
 
-const paginate = (perpageno) => {
-    setcurrentPage(perpageno);
+const paginate = (currentPosts ) => {
+    setcurrentPage(currentPosts );
+    console.log("perpage",currentPosts )
 }
   return (
     <div>

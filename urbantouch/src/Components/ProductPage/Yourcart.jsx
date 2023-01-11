@@ -3,13 +3,36 @@ import "../ProductPage/Yourcart.css"
 import {GrAdd} from 'react-icons/gr'
 import {GrSubtract} from 'react-icons/gr'
 import {RiDeleteBinLine} from 'react-icons/ri'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import {addProductCart, getProduct, GetProductCart} from "../../Redux/Cart/action"
+import {deleteProduct} from "../../Redux/Cart/action"
 
 export default function Yourcart() {
 
 const  cart= useSelector( store =>  store.cartreducer.cart);
 
-console.log("raj",cart)
+///console.log("raj",cart)
+
+  const dispatch = useDispatch();
+
+
+  // const handeldelete = (id )=>{
+  //   dispatch(deleteProduct(id))
+  //   console.log("idraj",id)
+  // }
+  const   handeldelete=(id)=>{
+    dispatch(deleteProduct(+id)) 
+   }
+
+  useEffect(() => {
+    if(cart.length>0){
+      dispatch(getProduct());
+    }
+    
+},[dispatch]);
+// console.log("getprop",cart)
+
+ 
  
   return (
     <div className='your'> 
@@ -33,7 +56,6 @@ console.log("raj",cart)
                   <div className='yourimg'>
 
                   <img src={e.image} alt=""/>
-          
            <div>
            <p>gff</p>
            <p>RS:1388</p>
@@ -42,9 +64,9 @@ console.log("raj",cart)
            <div className='yourquant'>
             <div>
                 <p>quant</p>
-                <div className='delete'> 
-           < RiDeleteBinLine/>
-           </div>
+                <button className='delete' onClick={()=>handeldelete(e.id)}   style={{background:"red"}}> 
+           {/* < RiDeleteBinLine/> */}
+           </button>
       </div>
       </div>
 
@@ -55,27 +77,7 @@ console.log("raj",cart)
       </div>  
             </div>
         ))}
-        {/* <div className='yourimg'>
-            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""/>
-           <div>
-           <p>gff</p>
-           <p>RS:1388</p>
-           <p>Size:</p>
-           </div>
-           <div className='yourquant'>
-            <div>
-                <p>quant</p>
-                <div className='delete'> 
-           < RiDeleteBinLine/>
-           </div>
-      </div>
-      </div>
-
-       
-      <div className='yourtotal'>
-        <p>total</p>
-      </div>
-      </div>   */}
+        
   
       </div>
       

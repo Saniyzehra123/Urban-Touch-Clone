@@ -24,7 +24,7 @@ export const getNewArrivalFailure = (payload)=> ({
 export const getMensData =(payload)=>{
     return (dispatch) => {
         dispatch(getNewArrival());
-        axios.get(`https://urbantouchclone.herokuapp.com/products`,{
+        axios.get(`https://coral-tick-wear.cyclic.app/api/newarrival`,{
             params:{
                 ...payload,
             }
@@ -39,6 +39,6 @@ export const getMensData =(payload)=>{
     }
     }
  
-    
+    // https://urbantouchclone.herokuapp.com/products`
      
     

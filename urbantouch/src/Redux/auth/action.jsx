@@ -24,11 +24,13 @@ const signInFailure = (payload) => {
         // error
     }
 }
+ 
 
-const signIn = (payload) => (dispatch) => {
+export const signIn = (payload) => (dispatch) => {
     dispatch(siginInRequest());
-     axios.post('/api/login', payload,{baseURL:'https://reqres.in'})
-
+     axios.post('https://ecom-backend-production-4249.up.railway.app/login',payload)
+     //https://ecom-backend-production-4249.up.railway.app/login
+    // https://urbantouchclone.herokuapp.com/login
    // .then(r =>  console.log(r))
 
     .then(r => dispatch(signInSuccess(r.data)))
@@ -36,4 +38,4 @@ const signIn = (payload) => (dispatch) => {
     // console.log(e))
    dispatch(signInFailure(e.data)));
 }
-export {signIn}
+ 

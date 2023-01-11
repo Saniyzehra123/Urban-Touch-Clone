@@ -8,16 +8,17 @@ import { useDispatch, useSelector } from 'react-redux'
 import {  getMensData} from '../../Redux/Newarrival/action';
 import { getShirtData } from '../../Redux/Shirt/action';
 import axios from 'axios';
-import {addProductCart} from "../../Redux/Cart/action"
+import {addProductCart, getProduct} from "../../Redux/Cart/action"
 export default function Productdetail({product}) {
 
     const navigate=useNavigate()
   const [count,setcount] = useState(0)
   // const [data, setData]= useState([]); 
-  const cart=useSelector(store=>store.cartreducer.cart)
-  const dispatch = useDispatch();
+//  const cart=useSelector((store)=>store.cartreducer.cart)
+ 
   
-   console.log("prod",cart)
+  //console.log("prod",cart)
+  const dispatch = useDispatch();
 const handleadd= ()=>{
  
   setcount(count+1)
@@ -31,29 +32,41 @@ setcount(count-1)
 }
 
   const {id,end}=useParams();
-  console.log("id",id)
+  // console.log("id",id)
        
         const [current, setCurrent]=useState({});
-        console.log(current)
+        //console.log("curr",cart)
     
         useEffect(()=>{
-   axios.get(`http://localhost:8080/${end}/${id} `).then(res=>{
+    axios.get(`http://localhost:8080/${end}/${id}`).then(res=>{
       setCurrent(res.data)
+      // console.log("data",res.data)
     }
     )
     .catch(err=>{
       console.log(err)
     }
     )
-        },[])
+        } ,[])
 
+
+ 
 
         const  addToCartHandeler = () => {
           current && dispatch(addProductCart(current))
-
-           navigate("/yourcart" ,{replace:true})
-          console.log('add to cart');
+      
+          // .then(()=>dispatch(getProduct()))
+          // .then(()=>{
+          //   navigate("/yourcart")
+          // })
+        
         }
+
+  //         useEffect(()=>{
+  //   if(id) {
+  //     dispatch(getProduct)
+  //   }
+  // },[])
 
   return (
     <div className='prodcontainer'>
@@ -85,12 +98,12 @@ setcount(count-1)
  
             <button  onClick={ handlesub} ><GrSubtract/></button>
             <h2>{count}</h2>
-            <button  onClick={ addToCartHandeler } ><GrAdd/></button>
+            <button  onClick={handleadd} ><GrAdd/></button>
            
 
       </div>
 
-      <button className='addproduct' onClick={addToCartHandeler}>Add to cart</button>
+      <button className='addproduct' onClick={addToCartHandeler} >Add to cart</button>
       <br/>
       <button className='buyproduct'> Buy it now</button>
     </div>
@@ -196,14 +209,14 @@ setcount(count-1)
 //   const {id,end}=useParams();
 //   console.log("id",id)
        
-//         const [current, setCurrent]=useState({});
-//         console.log(current)
+//         const [cart, setcart]=useState({});
+//         console.log(cart)
 //         // const products=useSelector(store=>store.newarrivalreducer.products);
 //         // const  shirts = useSelector( store =>  store.shirtreducer.shirts);
 
 //         useEffect(()=>{
 //    axios.get(`http://localhost:8080/${end}/${id} `).then(res=>{
-//       setCurrent(res.data)
+//       setcart(res.data)
 //     }
 //     )
 //     .catch(err=>{
@@ -226,9 +239,9 @@ setcount(count-1)
 //   //             console.log("pdt", products)
 //   //               const  temp=products.find(
 //   //                 (product)=>product.id===Number(id));
-//   //           temp &&  setCurrent(temp ) ;
+//   //           temp &&  setcart(temp ) ;
 
-//   //           console.log("current",temp)
+//   //           console.log("cart",temp)
 //   //           }
 //   //       },[id,products])
    
@@ -238,12 +251,12 @@ setcount(count-1)
 //     <div className='prodcontainer'>
 //       <div className='procontent'> 
 //       <div className='prodimg' >
-//         <img src={current.image} alt="img"/>
+//         <img src={cart.image} alt="img"/>
 //       </div>
 //       <div className='protext'>
 //         <p>URBANTOUCH</p>
-//         <p>{current.title}</p>
-//         <p>{current.price}</p>
+//         <p>{cart.title}</p>
+//         <p>{cart.price}</p>
 //         <p>Tax included.</p>
 //         <p>Size</p>
 //         <div className='allbuttons'>

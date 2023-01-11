@@ -25,7 +25,7 @@ export const getTrouserFailure = (payload)=> ({
 export const getTrouserData =(payload)=>{
     return (dispatch) => {
         dispatch(getTrouser());
-        axios.get(`https://urbantouchclone.herokuapp.com/products3`,{
+        axios.get(`https://coral-tick-wear.cyclic.app/api/trousers`,{
             params:{
                 ...payload,
             }
@@ -39,3 +39,5 @@ export const getTrouserData =(payload)=>{
         );
     }
     }
+
+    // https://urbantouchclone.herokuapp.com/products3

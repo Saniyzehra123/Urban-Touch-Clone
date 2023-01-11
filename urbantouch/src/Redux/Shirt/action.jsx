@@ -19,7 +19,7 @@ export const getShirtFailure = (payload)=> ({
 export const getShirtData =(payload)=>{
     return (dispatch) => {
         dispatch(getShirt());
-        axios.get(`https://urbantouchclone.herokuapp.com/products2`,{
+        axios.get(`https://coral-tick-wear.cyclic.app/api/shirts`,{
             params:{
                 ...payload,
             }
@@ -33,3 +33,7 @@ export const getShirtData =(payload)=>{
         );
     }
     }
+
+    // https://coral-tick-wear.cyclic.app/api/shirts
+
+    // https://urbantouchclone.herokuapp.com/products2
