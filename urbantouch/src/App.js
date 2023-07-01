@@ -12,9 +12,9 @@ import Signup from './Components/Signup';
 function App() {
   return (
     <div className="App">
-     {/* <Navbar/> */}
+   
     <AllRoutes/>
-    {/* <Addcartpopup/> */}
+ 
     
     {/* <Yourcart/> */}
     {/* <Information/> */}
