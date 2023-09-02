@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Button from '@mui/material/Button';
+import { Button } from 'react-bootstrap';
 import "./Login.css"
 import { Link, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';

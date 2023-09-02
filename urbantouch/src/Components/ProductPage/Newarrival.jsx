@@ -5,7 +5,7 @@ import {  getMensData,getNewArrival,getMensFilterData} from '../../Redux/Newarri
 import  "../ProductPage/Newarrival.css";
 import Pagination from './Pagination';
 import Productdetail from './Productdetail';
-import { Select } from '@chakra-ui/react'
+ 
 
 export default function Newarrival() {
     // const [data,setdata] = useState([]);
@@ -75,37 +75,32 @@ const paginate = (currentPosts ) => {
 
 {/* 
         //select */}
-
+{/* 
 <Select placeholder='Select option'>
   <option value='option1'>Option 1</option>
   <option value='option2'>Option 2</option>
   <option value='option3'>Option 3</option>
-</Select>
+</Select> */}
     </div>
     <div className='newarrivalcontain'> 
+    {
+      products.map((product,index)=>{
+          return(
+              <div key={index}>
+              
+                      <NavLink to={`/${"newarrival"}/${product.id}`}>
+                      <img src={product.image} alt="" className='newimg'/>
+                      
+                      </NavLink>
+              
+                      <h3>{product.title}</h3>
+                      <p>{product.price}</p>
+              
+              </div>
+          )
+      })
+      }
 
-    
-           {
-                products.map((product,index)=>{
-                    return(
-                        <div key={index}>
-                        
-                                <NavLink to={`/${"newarrival"}/${product.id}`}>
-                                <img src={product.image} alt="" className='newimg'/>
-                                
-                                </NavLink>
-                        
-                                <h3>{product.title}</h3>
-                                <p>{product.price}</p>
-                        
-                        
-                        </div>
-                    )
-                })
-              }
- 
-   
-    
     </div>
 
     <Pagination page={page} totalPosts={products.length} paginate={paginate}/>

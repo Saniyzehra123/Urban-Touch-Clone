@@ -1,20 +1,19 @@
 .navcontainer{
     width:100%;
-    height: 160px;
+    height: 165px;
     /* border:1px solid blue; */
     /* justify-content: center;
     align-items: center; */
-    background-color: white;
-    position: fixed;
-    /* position: sticky; */
- 
-    top: 0;
-     
+    background-color: rgb(255, 254, 254);
+    position:fixed;
+    top:0;  
+    left: 0;
     z-index: 1;
-    
+  
 }
 .touch{
-    margin-left: 27%
+    margin-left: 27%;
+   
 }
 h1{
     text-align: center;
@@ -23,27 +22,36 @@ h1{
     color: rgb(0, 0, 5);
 }
 .topnav{
-    border:1px solid red;
+   
     width: 100%;
     height:40px;
-    padding-top: 10px;
+    padding: 15px;
     background-color: white;
+    border-bottom:1px solid rgb(216, 216, 216);
 }
-/* .secondnav{
-    display: flex;
-} */
+ 
+.topnav>h1{
+    font-size: 14px;
+}
+.secondnav{
+    height: 125px;
+     /* background-color: rgb(255, 0, 119); */
+    
+}
 .urbannav{
     /* border:1px solid green; */
     width: 100%;
-    height:37px;
-    padding-top: 30px;
-    /* margin-top: -8px; */
-    background-color: white;
+    height:72px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px  ;
+    /* background-color: rgb(223, 37, 37); */
 }
-.urbannav>img{
-    /* margin-top: -65px; */
-    margin-left: 0%;
-}
+ .loginandcart{
+    width: 10%;
+   
+    display: flex;
+ }
 .links{
     /* border:1px solid green; */
     color: black;
@@ -60,11 +68,11 @@ h1{
     cursor: pointer;
     text-decoration: underline;
 }
-.secondnav{
-        border-bottom:1px solid rgb(216, 216, 216);
+ 
+ 
+.search{
+    width:20px;
+    height :40px;
+    /* margin-left:2% */
 }
-.toLinknav{
-    border-bottom:1px solid rgb(216, 216, 216);
-}
-
  

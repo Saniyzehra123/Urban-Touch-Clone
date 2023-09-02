@@ -1,4 +1,5 @@
  
+import { Container } from 'react-bootstrap';
 import './App.css';
 import AllRoutes from './Components/AllRoutes';
 import Information from './Components/Checkout/Information';
@@ -8,18 +9,16 @@ import Navbar from './Components/Navbar';
 import Addcartpopup from './Components/ProductPage/Addcartpopup';
 import Yourcart from './Components/ProductPage/Yourcart';
 import Signup from './Components/Signup';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <div className="App">
-   
+  <>
     <AllRoutes/>
- 
-    
     {/* <Yourcart/> */}
     {/* <Information/> */}
     {/* <Signup/> */}
-    </div>
+    </> 
   );
 }
 

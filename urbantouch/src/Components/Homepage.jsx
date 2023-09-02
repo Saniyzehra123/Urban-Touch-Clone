@@ -4,8 +4,8 @@ import {GrPlayFill} from 'react-icons/gr'
 import "./Homepage.css"
 import axios from 'axios'
 import {Link} from "react-router-dom";
-
-
+import { Carousel, CarouselItem } from 'react-bootstrap'
+ 
 
 export default function Homepage() {
 
@@ -29,19 +29,39 @@ export default function Homepage() {
    
   return (
     <div>
-      
-     <div className='urbanpic'>
+
+    <div className='bannercontainer'>  
+
+     {/* <div className='urbanpic'>
       <img  width="100%" height="700px"    
       src="https://cdn.shopify.com/s/files/1/2381/1785/files/web_banner.jpg?v=1654243325&width=1500" alt="" />
     
+     </div>  */}
+     <Carousel  data-bs-theme="dark" className='carousel'>
+
+      <CarouselItem  className='urbanpic'>
+      <img  width="100%" height="700px"    
+       src="https://cdn.shopify.com/s/files/1/2381/1785/files/web_banner.jpg?v=1654243325&width=1500" alt="" />
+      </CarouselItem>
+      
+      <CarouselItem className='urbanpic'>
+      <img  width="100%" height="700px"    
+       src="https://www.urbantouch.in/cdn/shop/files/web_banner_2.jpg?v=1679114780&width=1500ac" alt="" />
+      </CarouselItem>
+
+      <CarouselItem className='urbanpic'>
+      <img  width="100%" height="700px"    
+       src="https://www.urbantouch.in/cdn/shop/files/web_banner_1.jpg?v=1679114894&width=2000" alt="" />
+      </CarouselItem>
+
+     </Carousel>
     
-    </div>
-     <div className="imgtext">
+     {/* <div className="imgtext">
        <p>URBAN EXPLORERS</p> 
        <button>Shop all</button>
 
+    </div> */}
     </div>
-
     <h2 className='featuretitle'>Featured products</h2>
       
       <div className='feature'>
@@ -62,6 +82,7 @@ export default function Homepage() {
         )
       }
       </div>
+      <div className='casualcontainer'>  
 
     <div className="moreh">
     <p   >What's More Casual</p>
@@ -92,14 +113,17 @@ export default function Homepage() {
      <p>
      Charcoal Grey Chest Printed T-Shirt </p>
    <p>Rs. 599.00</p>
-
-   <img width="60%"   
+  
+  <div className='grey'>
+  <img width="60%"   
     src="https://cdn.shopify.com/s/files/1/2381/1785/collections/DENIMS.jpg?v=1600681160&width=750" alt="" />
+  </div>
+      
 
     <p className='denimsname'>DENIMS</p>
       </div>
     </div>
- 
+    </div>
     <div  className='video'  onClick={handleplay }>
      
      {video?  <img src="https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch_1_96b59a43-e1df-4631-8ef2-3e04198c1e3d.jpg?v=1519987513&width=1500" alt="" /> : <ReactPlayer controls url='https://youtu.be/ywX9rSu38wc' width='100%' height='100%' /> }
@@ -107,7 +131,7 @@ export default function Homepage() {
      
      <div> 
       <div className='iconplay'> 
-      <GrPlayFill/>
+      <GrPlayFill />
      
       </div>
       </div>

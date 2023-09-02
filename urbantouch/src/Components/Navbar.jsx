@@ -5,26 +5,29 @@ import {FaRegUser} from "react-icons/fa";
 import  { BsHandbag} from "react-icons/bs";
 import {Link} from "react-router-dom";
  
-
- 
 export default function Navbar() {
 
   return (
     <div  className= "navcontainer">
-      <div className='toLinknav'>
+      <div className='topnav'>
         <h1>Welcome to our store</h1> 
   
         </div>
         
       <div className='secondnav'> 
        <div className='urbannav'>
-        <IoIosSearch  style={{width:"20px", height :"40px", marginLeft:"2%"}}/>
-     <Link to="/" > 
+     <div> <IoIosSearch className='search'  /></div>  
+     <div><Link to="/" > 
      <img   className="touch"
         src='https://cdn.shopify.com/s/files/1/2381/1785/files/urbantouch-logo_250x.jpg?v=1647581012' alt=''  />
-      </Link>  
-       <Link to= "/login" ><FaRegUser   style={{width:"20px", height :"40px",color:"black", marginLeft:"25%"}}/></Link>
+      </Link>
+      </div> 
+     <div className='loginandcart'>
+     <Link to= "/login" ><FaRegUser className='login'  style={{width:"20px", height :"40px",color:"black", marginLeft:"25%"}}/></Link>
       <Link to="/yourcart" ><BsHandbag  style={{width:"20px", height :"40px", marginLeft:"20px" ,color:"black"}}/></Link>
+      </div> 
+         
+       
        
         </div>
 

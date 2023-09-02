@@ -8,6 +8,10 @@ import { store } from './Redux/Store';
 import axios from 'axios'
 import { Provider } from 'react-redux';
 
+// React bootstrap Configure
+import "../node_modules/react-bootstrap/dist/react-bootstrap";
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
 axios.defaults.baseURL = 'http://localhost:8080';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 const root = ReactDOM.createRoot(document.getElementById('root'));
