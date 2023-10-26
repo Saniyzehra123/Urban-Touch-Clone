@@ -1,30 +1,27 @@
 import axios from "axios";
 import * as types from "./actionTypes";
 
-// export const GET_NEWARRIVAL = "GET_NEWARRIVAL";
-// export const GET_NEWARRIVAL_SUCCESS = "GET_NEWARRIVAL_SUCCESS";
-// export const GET_NEWARRIVAL_FAILURE = "GET_NEWARRIVAL_FAILURE";
 
 export const getNewArrival = (payload) => ({
-    type:types.GET_NEWARRIVAL,
+    type:types.ADD_PRODUCT_DETAILS_CART_REQUEST,
     payload
 });
 
 export const getNewArrivalSuccess = (payload)=> ({
-    type: types.GET_NEWARRIVAL_SUCCESS,
+    type: types.ADD_PRODUCT_DETAILS_CART_SUCCESS,
     payload
    
 });
 
 export const getNewArrivalFailure = (payload)=> ({
-    type: types.GET_NEWARRIVAL_FAILURE,
+    type: types.ADD_PRODUCT_DETAILS_CART_FAILURE,
     payload
 });
 
 export const getMensData =(payload)=>{
     return (dispatch) => {
         dispatch(getNewArrival());
-        axios.get(`https://coral-tick-wear.cyclic.app/api/newarrival`,{
+        axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/shirt`,{
             params:{
                 ...payload,
             }
@@ -38,7 +35,3 @@ export const getMensData =(payload)=>{
         );
     }
     }
- 
-    // https://urbantouchclone.herokuapp.com/products`
-     
-    

@@ -1,4 +1,4 @@
-import * as types from '../Newarrival/actionTypes';
+import * as types from '../ActionTypes/actionTypes';
 import axios from 'axios';
 
 
@@ -25,7 +25,7 @@ export const getTrouserFailure = (payload)=> ({
 export const getTrouserData =(payload)=>{
     return (dispatch) => {
         dispatch(getTrouser());
-        axios.get(`https://coral-tick-wear.cyclic.app/api/trousers`,{
+        axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/bottom`,{
             params:{
                 ...payload,
             }

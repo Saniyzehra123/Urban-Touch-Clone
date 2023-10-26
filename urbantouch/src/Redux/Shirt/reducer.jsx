@@ -1,5 +1,5 @@
  
-import * as types from '../Newarrival/actionTypes';
+import * as types from '../ActionTypes/actionTypes';
 const initialState = {
     isLoading: false,
     shirts: [],

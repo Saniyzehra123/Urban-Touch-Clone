@@ -1,161 +1,113 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./Information.css"
+import "./Information.css" 
+import PhoneInput from 'react-phone-number-input'
+import { Button, Col, Container, FloatingLabel, Form, FormControl, Row, } from 'react-bootstrap'
+import { IoChevronBackCircle} from "react-icons/io5";
 export default function Information() {
+
+  
   return (
-    <div className="information">
-{/* 
-     ///contact information */}
-    <div  className='contactbox'>
-      <div className='already'> <div> 
-     <h1>Contact information</h1>  
-      <p>Already have an account? Log in</p>
-      </div>
-      </div>
-
-    <input type="text" placeholder="Email or mobile phone number" />
-    
-    <br/>
-
-    <div className='contactno'> 
-    <div> 
-    <input type="checkbox" name="vehicle1" className='check'/>
-    <p>Email me with news and offers</p>
-    </div>
-    </div>
-    <div>
-        <h1 className='shipp'>Shipping address</h1>
-        <select className='country'>
-            <option>Select a country</option>
-            <option>India</option>
-
-        </select>
-        <br/>
-        <div className='name'> 
-        <div> 
-        <input type="text" placeholder="Full name" />
-        
-        <input type="text" placeholder="Last name" />
+    <Container className='infocontainer'>
+    <Row className="information">
+      <Col md={8}>
+        <div className="contact-box">
+          <div className="already">
+            <h1 className='contact'>Contact Information</h1>
+            <p>Already have an account? Log in</p>
+          </div>
+          <FloatingLabel controlId="floatingInput" label="Email or mobile phone number" >
+            <Form.Control type="email" placeholder="name@example.com" />
+          </FloatingLabel>
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form>  <Form.Check className="check" type="checkbox" label="Email me with news and offers" /> </Form>
+          </Form.Group>
+          <h1 className="shipping">Shipping Address</h1>
+          <Form.Select disabled  >
+         <option>India</option>
+         </Form.Select>
+          <Row>
+            <Col md={6}>
+              <FloatingLabel controlId="firstName" label="First Name">
+                <Form.Control type="text" placeholder="First Name" />
+              </FloatingLabel>
+            </Col>
+            <Col md={6}>
+              <FloatingLabel controlId="lastName" label="Last Name">
+                <Form.Control type="text" placeholder="Last Name" />
+              </FloatingLabel>
+            </Col>
+          </Row>
+          <FloatingLabel controlId="address" label="Address">
+            <Form.Control type="text" placeholder="Address" />
+          </FloatingLabel>
+          <FloatingLabel controlId="apartment" label="Apartment, suite, etc. (optional)">
+            <Form.Control type="text" placeholder="Apartment, suite, etc. (optional)" />
+          </FloatingLabel>
+          <Row>
+            <Col md={4}  className='mt-1' >
+              <FloatingLabel controlId="city" label="City">
+                <Form.Control type="text" placeholder="City" />
+              </FloatingLabel>
+            </Col>
+            <Col md={4} className='mt-3'>
+            <Form.Select aria-label="Default select example">
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            </Form.Select>
+            </Col>
+            <Col md={4}  className='mt-1'>
+              <FloatingLabel controlId="pinCode" label="Pin code">
+                <Form.Control type="text" placeholder="Pin code" />
+              </FloatingLabel>
+            </Col>
+          </Row>
+          <div >
+          <Form>  <Form.Check className="save" type="checkbox" label="Save this information for next time" /> </Form>
+            {/* <div>
+              <input type="checkbox" className="check" />
+              <p>Save this information for next time</p>
+            </div> */}
+          </div>
+          <div className="return">
+            <p> <IoChevronBackCircle className='back'/> Return to cart  </p>
+            <Link to="/information/shipping">
+              <Button variant="success"  >Continue to shipping</Button>
+            </Link>
+          </div>
         </div>
+      </Col>
+
+      <Col md={4} className="left">
+        <div className="coupon-box">
+          <div className="coupon-img"></div>
+          <div className="coupon-name"></div>
         </div>
-        <br/>
-        <div className='address'>
-        <input type="text" placeholder="Address" />
-        <br/>
-        <input type="text" placeholder="Apartment,suite,etc.(option)" />
-        </div>
-        <br/>
-        <div className='city'> 
-        <div> 
-        <input type="text" placeholder="City" />
-        
-          <select>
-            <option>Select a state</option>
-            <option>Andhra Pradesh</option>
-            <option>Arunachal Pradesh</option>
-            <option>Assam</option>
-            <option>Bihar</option>
-            <option>Chandigarh</option>
-            <option>Chhattisgarh</option>
-            <option>Dadra and Nagar Haveli</option>
-            <option>Daman and Diu</option>
-            <option>Delhi</option>
-            <option>Goa</option>
-            <option>Gujarat</option>
-            <option>Haryana</option>
-            <option>Himachal Pradesh</option>
-            <option>Jammu and Kashmir</option>
-            <option>Jharkhand</option>
-            <option>Karnataka</option>
-            <option>Kerala</option>
-            <option>Lakshadweep</option>
-            <option>Madhya Pradesh</option>
-            <option>Maharashtra</option>
-            <option>Manipur</option>
-            <option>Meghalaya</option>
-            <option>Mizoram</option>
-            <option>Nagaland</option>
-            <option>Odisha</option>
-            <option>Puducherry</option>
-            <option>Punjab</option>
-            <option>Rajasthan</option>
-            <option>Sikkim</option>
-            <option>Tamil Nadu</option>
-            <option>Telangana</option>
-            <option>Tripura</option>
-            <option>Uttar Pradesh</option>
-            <option>Uttarakhand</option>
-            <option>West Bengal</option>
-
-       </select>
-<div> 
-<input type="text" placeholder="Pin code" />
-</div>
-</div>
-</div>
-<br/>
-<input type="text" placeholder="Phone" />
-
-<br/>
-<div className='contactno'> 
-    <div>
-<input type="checkbox" name="vehicle1" className='check'/>
-  <p>	Save this information for next time</p>
-  </div>
-  </div>
-  <div className='return'> 
-  <div> 
-    <p>Return to cart</p>
-   <Link to="/information/shipping">  
-   <button className='btn'>Continue to shipping</button> 
-   </Link>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    ///coupon code
-    <div className='left'>
-     
-    <div className='couponbox'> 
-  <div className='coupimg'>
-
-   </div>
-   <div className='couponname'>
-
-   </div>
-   </div>
-    <hr className='hr'/>
-     <input placeholder='Discount code' className='discount' />
-        <button className='apply'>Apply</button>
-           <hr/>
-        <div className='subtotal'> 
-            <div>
+        <hr className="hr" />
+        <input placeholder="Discount code" className="discount" />
+        <button className="apply">Apply</button>
+        <hr />
+        <div className="subtotal">
+          <div>
             <p>Subtotal</p>
             <p>Shipping</p>
-
-            </div>
-            <div className='cal'>
+          </div>
+          <div className="cal">
             <p>$0.00</p>
             <p>Calculated at next step</p>
- 
-            </div>
-            </div>
-            <hr/>
-            <div className='total'>
-
-              <div>
+          </div>
+        </div>
+        <hr />
+        <div className="total">
+          <div>
             <p>Total</p>
             <p>INR ₹5,796.00</p>
-
-
+          </div>
         </div>
-        </div>
-        </div>
-
-    </div>
-
-     
-     //</div>
+      </Col>
+    </Row>
+  </Container>
   )
 }

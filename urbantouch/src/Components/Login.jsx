@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import "./Login.css"
 import { Link, useLocation } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './Navbarsection';
 import {useDispatch, useSelector} from 'react-redux';
 import { signIn } from '../Redux/auth/action';
 import {useNavigate} from "react-router-dom"

@@ -1,80 +1,54 @@
-.fotter{
-    /* border : 1px solid #000; */
-    display: flex;
-    margin-top:2%;
-    justify-content: left;
-    text-align: left;
-    padding: 1%;
-    padding-left: 5%;
-    
-}
-.foottitle{
-    
-    margin-left: -60%;
-}
-.fotter>div>h1{
-    font-size: 20px;
-    font-weight: 340;
+.footer {
+  overflow: hidden;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .fotboder{
+    border-top:1px solid rgb(194,195,196);
+  }
   
-}
-.fotter>div>p{
-    color: rgb(146, 146, 146);
-    font-size: 18px;
-}
- .info
-{
-    margin-left: 18%;
-}
-.infohead{
-    /* border : 1px solid #000; */
-    margin-left: -82%;
-     
-}
-.trade{
-    margin-left: 10%;
-}
-.tradehead{
-    /* border : 1px solid #000; */
-    margin-left: -72%;
-}
-.subscribe{
-    /* border : 1px solid #000; */
+  .footer h3 {
+    font-size: 1.2rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 10px;
+  }
+  
+  .subscribe {
+    display: flex;
+    text-align: left;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  
+  .subscribe input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  
+  .icon {
     display: flex;
     justify-content: space-around;
-}
-.subs{
-    margin-left: -13%;
-}
-.subs>h1{
-    font-size: 20px;
-    font-weight: 340;
-    margin-left: -19%;
-}
-.subs>input{
-    width: 150%;
-    height: 40px;
-    /* border: 1px solid #000; */
-    font-size: 20px;
-    padding-left: 10px;
-}
- 
-.icon{
-    margin-top:20px;
-
- 
-}
-.paymentcardsfotter>div{
-    /* border: 1px solid #000;  */
-    margin-left: 1%; 
-    height: 50px;
-   margin-top: 1%;
-}
-.paymencardsfotter>div>img{
-  margin-left: 20px;
-  /* border: 1px solid #000; */
-}
-.paymentcardsfotter>div>p{
-    color: rgb(158, 155, 155);
-    font-size: 12px;
-    font-weight: 400;
-}
+    font-size: 24px;
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  
+  .payment-cards-footer {
+    justify-content: center;
+     
+  }
+  .payment{
+    width: 55px;
+    padding: 10px;
+  }   
+  

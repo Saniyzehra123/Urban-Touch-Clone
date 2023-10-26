@@ -7,32 +7,43 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 25px;
 }
-.shirtimg{
-    width: 105%;
-    height: 80%;
-}
-.heading{
+ 
+.shirtheading{
     font-size: 45px;
     font-weight: 350;
     color: #000;
     text-align: left;
-    margin-left: 5%;
-    /* margin-top: 5%; */
+    margin-top:15%;
 }
-.subtitle{
+.shirtsubtitle{
     font-size: 22px;
     font-weight: 200;
     color: rgb(117, 117, 117);
     text-align: left;
-    margin-left: 5%;
-    /* margin-top: 5%; */
+    margin-top: 2%;
 }
-.shirtcontain>div>h3{
-    font-size: 15px;
-    font-weight:  100;
-    margin-top: 5%;
+.shirt-div{
+    width: 100%;
+    height: 300px;
+}
+.shirtimg{
+    width: 100%;
+    height:100%;
+    object-fit:fill;
+}
+.heart{
+    position: absolute;
+    font-size: 20px;
+    left:88%;
+    color: red;
+    z-index: 1;
+    float: right;
+    object-position: right;
+    margin-top: 15px;
+}
+.tshirttext{
     text-align: left;
-    margin-left: 5%;
+    color: rgb(104, 101, 101);
 }
 .shirtcontain>div>p{
     font-size: 18px;
@@ -43,3 +54,47 @@
     text-align: left;
 }
  
+/* Add this CSS to your existing styles */
+
+/* Filter Section Styles */
+.filter-col {
+    background-color: #f9f9f9;
+    padding: 20px;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  /* Product List Section Styles */
+  .product-col {
+    padding: 20px;
+  }
+  
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .product-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Responsive Media Query */
+  @media (max-width: 768px) {
+    .filter-col {
+      display: none;
+    }
+  
+    .product-col {
+      width: 100%;
+    }
+  }
+  

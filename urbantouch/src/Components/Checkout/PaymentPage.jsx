@@ -1,132 +1,168 @@
 
 import React from 'react'
 import "./paymentpage.css"
+import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { useState } from 'react';
 
 export default function PaymentPage() {
+  const [showBillingDetails, setShowBillingDetails] = useState(false);
+
+  const toggleBillingDetails = () => {
+    setShowBillingDetails(!showBillingDetails);
+  };
   return (
     <div>
         <div className='paymentcheck'>
-        <div className='paymentinfo'>
-        <div className='szcontainers'> 
-        <div className='contactinfor'> 
-        <div> 
-        <h1 >Contact  </h1>
-        <p>+91 788979</p>
-        <p>Change</p>
-        </div>
-        </div>
-        <hr/>
-        <div className='shipto'>
-        <div> 
-        <h1>Ship to</h1>
-        <p>310/290C1 bajpainagar </p>
-        <p>Change</p>
-      </div>
-      </div>
-
-      <hr/>
-        <div className='paymentmethod'>
-        <div>
-          <h1>Method</h1>
-          <p>Standard Shipping · Free</p>
-           </div>
-       </div>
-      </div>
-
-
-          <div className='paymenttrans'>
-            <h1  style={{marginLeft:"-80%" ,fontSize:"20px"}}>Payment</h1>
-
-            <p style={{marginLeft:"-34%" ,color:"GrayText"}}>All transactions are secure and encrypted.</p>
-         
-         <div className='paymentdiv'>
-           <div className='paymentcard'>
-            <p>Credit Card /</p>
-            <p> Debit Card / </p>
-            <p> Net Banking /</p>
-            <p>  UPI</p>
-           </div>
-           <hr/>
-           <p>
-           After clicking “Complete order”, you will be redirected to Credit <br/> Card / Debit Card / Net Banking / UPI to complete your purchase<br/> securely.
-           </p>
-          
-         </div>
-
-         <div className='blling'>
-         
-         <h1 style={{marginLeft:"-65%" ,fontSize:"20px"}}>Billing address</h1> 
-         <p  style={{marginLeft:"-2%",color:"GrayText"}}> Select the address that matches your card or payment method.</p> 
-        
-        <div className='same'>
-         <div> 
-      <div className='blue' >
-        <div className='circles'></div>
-      </div>
-      <p >Same as shipping address</p>
-      
-      </div>
-      <hr/>
-      <div className='empty'>
-        <div className='emptycircle'>
-
-        </div>
-        <p>Use a different address</p>
-      </div>
- 
-
-        
-      </div>
-
-         </div>
-         
-
-         
-      <div className='return'> 
-  <div> 
-    <p style={{color:"rgb(36, 141, 211);"}}>return to cart</p>
- 
-    <button className='butt'  >Continue to  order</button>  
- 
-    </div>
-    </div>
+        <Container>
+      <Row>
+      <Col md={6}>
+          <div className="payment-form">
+            <h2>Payment Details</h2>
+            <Form>
+              <Form.Group>
+                <Form.Label>Card Number</Form.Label>
+                <Form.Control type="text" placeholder="Enter your card number" />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Name on Card</Form.Label>
+                <Form.Control type="text" placeholder="Enter your name" />
+              </Form.Group>
+              <Row>
+                <Col>
+                  <Form.Group>
+                    <Form.Label>Expiration Date</Form.Label>
+                    <Form.Control type="text" placeholder="MM/YY" />
+                  </Form.Group>
+                </Col>
+                <Col>
+                  <Form.Group>
+                    <Form.Label>CVV</Form.Label>
+                    <Form.Control type="text" placeholder="CVV" />
+                  </Form.Group>
+                </Col>
+              </Row>
+              <Form.Group>
+                <Form.Label>Payment Method</Form.Label>
+                <Form.Control as="select">
+                  <option>Credit Card</option>
+                  <option>Debit Card</option>
+                  <option>Net Banking</option>
+                  <option>UPI</option>
+                </Form.Control>
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Pay Now
+              </Button>
+            </Form>
+             
           </div>
-      
-         </div>
-         <div>
-
-         </div>
+        </Col>
+        <Col md={6}>
+          <div className="billing-address">
+            <h2>Billing Address</h2>
+            <Form>
+              <Form.Check
+                type="radio"
+                label="Same as shipping address"
+                name="billingAddress"
+                id="sameAddress"
+              />
+              <Form.Check
+                type="radio"
+                label="Use a different billing address"
+                name="billingAddress"
+                id="differentAddress"
+                onChange={toggleBillingDetails}
+              />
+              {showBillingDetails && (
+                <div className="billing-details">
+                  <Form.Group>
+                    <Form.Label>Country</Form.Label>
+                    <Form.Control type="text" placeholder="India" />
+                  </Form.Group>
+                  <Row>
+                    <Col>
+                      <Form.Group>
+                        <Form.Label>First name</Form.Label>
+                        <Form.Control type="text" placeholder="First name" />
+                      </Form.Group>
+                    </Col>
+                    <Col>
+                      <Form.Group>
+                        <Form.Label>Last name</Form.Label>
+                        <Form.Control type="text" placeholder="Last name" />
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                  <Form.Group>
+                    <Form.Label>Address</Form.Label>
+                    <Form.Control type="text" placeholder="Address" />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Add a house number if you have one</Form.Label>
+                    <Form.Control type="text" placeholder="House number" />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Apartment, suite, etc. (optional)</Form.Label>
+                    <Form.Control type="text" placeholder="Apartment, suite, etc." />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>City</Form.Label>
+                    <Form.Control type="text" placeholder="City" />
+                  </Form.Group>
+                  <Row>
+                    <Col>
+                      <Form.Group>
+                        <Form.Label>State</Form.Label>
+                        <Form.Control type="text" placeholder="State" />
+                      </Form.Group>
+                    </Col>
+                    <Col>
+                      <Form.Group>
+                        <Form.Label>PIN code</Form.Label>
+                        <Form.Control type="text" placeholder="PIN code" />
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                </div>
+              )}
+            </Form>
+            <p className="cash-on-delivery-text">
+              Or choose Cash on Delivery (COD).
+            </p>
+          </div>
+        </Col>
+      </Row>
+    </Container>
 
   {/* ///coupon code */}
-  <div className='leftcodes'>
-    <hr/>
-     <input placeholder='Discount code' className='discount' />
-        <button className='apply'>Apply</button>
-           <hr/>
-        <div className='subtotal'> 
-            <div>
+  {/* <Col md={4} className="shipleft">
+        <div className="shipcoupon-box">
+          <div className="shipcoupon-img"></div>
+          <div className="shipcoupon-name"></div>
+        </div>
+        <hr className="hr" />
+        <input placeholder="Discount code" className="shipdiscount" />
+        <button className="shipapply">Apply</button>
+        <hr />
+        <div className="shipsubtotal">
+          <div>
             <p>Subtotal</p>
             <p>Shipping</p>
-
-            </div>
-            <div className='cal'>
+          </div>
+          <div className="shipcal">
             <p>$0.00</p>
             <p>Calculated at next step</p>
- 
-            </div>
-            </div>
-            <hr/>
-            <div className='total'>
-
-              <div>
+          </div>
+        </div>
+        <hr />
+        <div className="shiptotal">
+          <div>
             <p>Total</p>
             <p>INR ₹5,796.00</p>
-
-
+          </div>
         </div>
-        </div>
-        </div>
-
+      </Col> */}
 
 
 

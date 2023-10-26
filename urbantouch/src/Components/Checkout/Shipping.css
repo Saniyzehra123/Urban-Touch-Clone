@@ -1,57 +1,68 @@
 .ship{
     border:1px solid red;
     width: 100%;
-    height: 800px;
+    height: 550px;
     display:flex;
-    margin-top: 22%;
+    margin-top:12%;
 }
 .contactship{
-    border-right:1px solid rgb(169, 169, 169);;
+    /* border:1px solid rgb(169, 169, 169); */
     width: 60%;
-    height:400px;
+    height:450px;
     display: inline;
     padding-left: 3%;
-}
- 
-.contactinfo>div{
-display:flex;
-/* border:1px solid black; */
- 
-}
-.contactinfo>div>h1{
-    padding-left:10%;
- 
-}
-.contactinfo>div>p:nth-child(2){
-    padding-left:20%;
-}
-.contactinfo>div>p:nth-child(3){
-    padding-left:30%;
-    font-size:13px;
-    color: rgb(20, 139, 236);
 }
 .szcontainer{
     border:1px solid rgb(169, 169, 169);
     width: 80%;
-    height:150px;
+    height:100px;
      border-radius:10px;
     margin-left:10px;
     margin-top:10%;
+    padding: 10px;
 }
+.contactinfo>div{
+display:flex;
+justify-content: space-between;
+border-bottom:1px solid rgb(169, 169, 169);
+/* border:1px solid black; */
+}
+ 
+.contactinfo>div>h1{
+    font-size:20px;
+}
+.contactinfo>div>p:nth-child(2){
+    /* padding-left:20%; */
+}
+.contactinfo>div>p:nth-child(3){
+    /* padding-left:25%; */
+    font-size:13px;
+    color: rgb(20, 139, 236);
+}
+ 
 .shipto>div{
     display:flex;
+    padding: 10px;
+    justify-content: space-between;
 }
  .shipto>div>h1{
-    padding-left:10%;
+    /* padding-left:10%; */
+    font-size:20px;
  }
     .shipto>div>p:nth-child(2){
-        padding-left:16%;
+        /* padding-left:16%; */
     }
     .shipto>div>p:nth-child(3){
-        padding-left:20%;
+        /* padding-left:30%; */
         font-size:13px;
         color: rgb(20, 139, 236);
     }
+
+    .standard{
+        margin: 2%;
+        text-align: left;
+        font-size: 20px;
+    }   
     .method{
         display: flex;
         border:1px solid rgb(169, 169, 169);
@@ -65,12 +76,15 @@ display:flex;
     .method>div{
         display:flex;
     }
-    .method>p:nth-child(3){
-        padding-left:55%;
-    }
+     
     .method>p:nth-child(2){
-        padding-left:3%;
+    padding: 10px;
     }
+.method>p:nth-child(3){
+ margin-left:60%;   
+ padding-top:10px;
+ font-weight: 700;
+ }
     .method>div{
          
         width: 20px;
@@ -90,29 +104,106 @@ display:flex;
         background-color:rgb(255, 255, 255);
         border-radius: 90pc;
     }
-    .standard{
-        margin-left:-80%;
-        font-size: 20px;
+    .szshipreturn{
+        width:80%;
+        height: 60px;
+        display: flex;
+        margin: 10px 10px; 
+        padding: 10px;
+        justify-content: space-between;  
+    }
+    .szshipreturn p{
+        padding-top: 10px;
     }
       .but{
-        background-color:  rgb(36, 141, 211);
-    margin-left: 250%;
+    background-color:  rgb(36, 141, 211);
+    /* margin-left: 250%; */
     color:white;
-    margin-top:10%;
     width: 100%;
     height: 40px;
     border: none;
     border-radius: 5px;
         
     }
-    .leftcode{
-        margin-top: 1%;
+    .shipleft {
+        /* margin-top: 20px; */
+        width: 100%;
+        height: 550px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+      }
+      
+      /* Coupon box */
+      .shipcoupon-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        height: 145px;
+      }
+      
+      /* Coupon image (customize with your image) */
+      .shipcoupon-img {
+        width: 60%;
+        height: 100%;
+        /* background-image: url('your-image-url.jpg'); */
+        background-size: cover;
+      }
+      
+      /* Coupon name (customize with your text) */
+      .shipcoupon-name {
         width: 40%;
-        height: 400px;
-        margin-left: 1%;
-        /* border:1px solid green; */
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Discount input and apply button */
+      .shipdiscount {
+        width: 70%;
+        margin-top: 10px;
+      }
+      
+      .shipapply {
+        width: 30%;
+        height: 45px;
+        margin-top: 10px;
+      }
+      
+      /* Subtotal and total sections */
+      .shipsubtotal {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+      }
+      
+      .shipcal {
+        font-size: 18px;
+        text-align: right;
+      }
+      
+      .shiptotal {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Media query for responsiveness */
+      @media (max-width: 768px) {
+        .shipinformation {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .shipcontact-box, .left {
+          width: 100%;
+        }
+      
+        .shipshipping {
+          margin-left: 0;
+        }
+      
+        .shipdiscount, .apply {
+          width: 100%;
+        }
     }
-/* .left{
-    border:1px solid  blue;
-    margin-left: 10 px;
-} */

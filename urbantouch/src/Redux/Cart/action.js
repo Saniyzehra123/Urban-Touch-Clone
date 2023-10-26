@@ -29,21 +29,17 @@ import axios from 'axios';
 
 export const addProductCart  = (payload) => dispatch => {
     dispatch({type:types.ADD_PRODUCT_CART_REQUEST});
-    return axios.post('http://localhost:8080/cart', payload)
+    return axios.post('https://nice-blue-zebra-hose.cyclic.app/api/cart', payload)
   //  console.log("pro",product)
     .then((r) => dispatch({type:types.ADD_PRODUCT_CART_SUCCESS,payload:r.data}))
     .catch((e) => dispatch({type:types.ADD_PRODUCT_CART_FAILURE, payload:e}));
 }
-
-
-
-          ///////////getcart/////
           export const getProduct=()=>(dispatch)=>{
 
             dispatch({ type:types.GET_PRODUCTS_REQUEST});
         
             return axios
-            .get("http://localhost:8080/cart")
+            .get("https://nice-blue-zebra-hose.cyclic.app/api/cart")
             .then((r)=>{
                 dispatch({type:types.GET_PRODUCTS_SUCCESS, payload:r.data})
             })
@@ -52,7 +48,6 @@ export const addProductCart  = (payload) => dispatch => {
             })
         }
 
- 
 
 export const deleteProduct=(id)=>(dispatch)=>{
     dispatch({type:types.DELETE_PRODUCT_CART_REQUEST})

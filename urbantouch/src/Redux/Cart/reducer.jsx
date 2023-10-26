@@ -11,13 +11,13 @@ const cartreducer = (state = initialState, action) => { 'reducer'
 const {type, payload} = action;
  switch(type) {
     
-case types.  ADD_PRODUCT_CART_REQUEST:
+case types.ADD_PRODUCT_CART_REQUEST:
     return {
         ...state,
         error: '',
         loading: true
     }
-case types.  ADD_PRODUCT_CART_SUCCESS:
+case types.ADD_PRODUCT_CART_SUCCESS:
     return {
         ...state,
     
@@ -25,10 +25,10 @@ case types.  ADD_PRODUCT_CART_SUCCESS:
         cart: [...state.cart, payload],
         loading: false
     }
-case types. ADD_PRODUCT_CART_FAILURE:
+case types.ADD_PRODUCT_CART_FAILURE:
     return {
         ...state,
-        error: payload,
+        error:payload,
         loading: false
     }
   
@@ -42,12 +42,12 @@ case types. ADD_PRODUCT_CART_FAILURE:
             error: '',
             loading: true
         }
-    case types.   GET_PRODUCTS_SUCCESS:
+    case types.GET_PRODUCTS_SUCCESS:
         return {
             ...state,
         
             error: false,
-            cart:   payload,
+            cart:payload,
             loading: false
         }
     case types.GET_PRODUCTS_FAILURE:

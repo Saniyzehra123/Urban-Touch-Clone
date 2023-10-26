@@ -8,21 +8,21 @@ import { getTrouserData  } from '../../Redux/Trouser/action';
 export default function Trouser() {
     //const [data,setdata] = useState([]);
 
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
-   const  trousers= useSelector( store =>  store.trouserreducer.trousers);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const  trousers= useSelector( store =>  store.trouserreducer.trousers);
   
  //     // const {loading,error} = useSelector( store =>  store.newarrival);
  
-   useEffect(() => {
-      dispatch(getTrouserData());
+  useEffect(() => {
+    dispatch(getTrouserData());
   },[dispatch.trousers?.length]);
-   console.log("trouser",trousers)
+  console.log("trouser",trousers)
 
   return (
     <div>
        
-       <h1 className='heading'> TROUSERS</h1>
+      <h1 className='heading'> TROUSERS</h1>
       <h2 className='subtitle'>  Features Trouser collection from urbantouch, Choose your favourite outfit    <br/>  from a wide range of collection.</h2>
    
     <div className='trousercontainer'>
@@ -30,11 +30,11 @@ export default function Trouser() {
         trousers.map((trouser,index)=>{
             return(
                 <div key={index}>
-                  <NavLink to={`/${"trousers"}/${trouser.id}`}>
-                    <img src={trouser.image} alt="" className='trouserimg'/>
+                  <NavLink to={`/${"bottom"}/${trouser._id}`}>
+                  <img src={trouser.image} alt="" className='trouserimg'/>
                   </NavLink>
-                    <h3>{trouser.name}</h3>
-                    <p>{trouser.price}</p>
+                  <h3>{trouser.title}</h3>
+                  <p>{trouser.price}</p>
                 </div>
             )
         })

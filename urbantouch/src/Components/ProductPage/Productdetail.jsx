@@ -5,14 +5,26 @@ import {GrAdd} from 'react-icons/gr'
 import {GrSubtract} from 'react-icons/gr'
 import "../ProductPage/Productdetail.css"
 import { useDispatch, useSelector } from 'react-redux'
-import {  getMensData} from '../../Redux/Newarrival/action';
 import { getShirtData } from '../../Redux/Shirt/action';
 import axios from 'axios';
+import { FaPlus, FaMinus } from 'react-icons/fa';
+import { Container, Row, Col, Image, Button,InputGroup,FormControl, Form } from 'react-bootstrap';
 import {addProductCart, getProduct} from "../../Redux/Cart/action"
 export default function Productdetail({product}) {
 
     const navigate=useNavigate()
   const [count,setcount] = useState(0)
+  const [quantity, setQuantity] = useState(1); // Initial quantity value
+
+  const handleIncrement = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const handleDecrement = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
   // const [data, setData]= useState([]); 
 //  const cart=useSelector((store)=>store.cartreducer.cart)
  
@@ -22,7 +34,6 @@ export default function Productdetail({product}) {
 const handleadd= ()=>{
  
   setcount(count+1)
-
   }
 const handlesub= ()=>{
 if(count <= 0){
@@ -32,15 +43,14 @@ setcount(count-1)
 }
 
   const {id,end}=useParams();
-  // console.log("id",id)
+  console.log("id",id,"end",end)
        
         const [current, setCurrent]=useState({});
-        //console.log("curr",cart)
-    
+        //console.log("curr",cart) 
         useEffect(()=>{
-    axios.get(`http://localhost:8080/${end}/${id}`).then(res=>{
+    axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/${end}/${id}`).then(res=>{
       setCurrent(res.data)
-      // console.log("data",res.data)
+      console.log("data",res.data)
     }
     )
     .catch(err=>{
@@ -54,7 +64,7 @@ setcount(count-1)
 
         const  addToCartHandeler = () => {
           current && dispatch(addProductCart(current))
-      
+      console.log("current",current)
           // .then(()=>dispatch(getProduct()))
           // .then(()=>{
           //   navigate("/yourcart")
@@ -69,48 +79,45 @@ setcount(count-1)
   // },[])
 
   return (
-    <div className='prodcontainer'>
-      <div className='procontent'> 
-      <div className='prodimg' >
-        <img src={current.image} alt="img"/>
-      </div>
-      <div className='protext'>
-        <p>URBANTOUCH</p>
-        <p>{current.title}</p>
+    <Container className='prodcontainer'>
+    <Row className='procontent'>
+      <Col md={6} xs={12} className='proimg'>
+        <Image src={current.image} alt="Product Image" fluid />
+      </Col>
+      <Col md={6} xs={12} className='protext'>
+        <h6>URBANTOUCH</h6>
+        <h1>{current.title}</h1>
         <p>{current.price}</p>
         <p>Tax included.</p>
         <p>Size</p>
         <div className='allbuttons'>
-            <button>S</button>
-            <button>M</button>
-            <button>L</button>
-            <button>XL</button>
-             
-
+          <Button variant="light">S</Button>
+          <Button variant="light">M</Button>
+          <Button variant="light">L</Button>
+          <Button variant="light">XL</Button>
         </div>
-        {/* <p>Color</p>
-        <div>
-            <button>Green</button>
-        </div> */}
-
-        <p>Quantity</p>
+      <h2 className='qunt'>Quanity</h2>
+      <InputGroup className=" quantitybox ">
+      <Button variant="outline-dark"  className='quntbtnleft' onClick={handleDecrement}>
+        <FaMinus />
+      </Button>
+      <FormControl  type="text" className="quntform" value={quantity} readOnly />
+      <Button variant="outline-dark" className='quntbtnright' onClick={handleIncrement}>
+        <FaPlus />
+      </Button>
+    </InputGroup>
+        {/* <p>Quantity</p>
         <div className='quantitybox'>
- 
-            <button  onClick={ handlesub} ><GrSubtract/></button>
-            <h2>{count}</h2>
-            <button  onClick={handleadd} ><GrAdd/></button>
-           
-
-      </div>
-
-      <button className='addproduct' onClick={addToCartHandeler} >Add to cart</button>
-      <br/>
-      <button className='buyproduct'> Buy it now</button>
-    </div>
-
-    </div>
-    
-    </div>
+          <Button variant="light" >-</Button>
+          <h2>{count}</h2>
+          <Button variant="light"  >+</Button>
+        </div> */}
+        <Button variant="outline-dark " className='addproduct' >Add to cart</Button>
+        <br />
+        <Button variant="dark outline-dark" className='buyproduct'>Buy it now</Button>
+      </Col>
+    </Row>
+  </Container>
   )
  }
 

@@ -1,4 +1,4 @@
-import * as types from '../Newarrival/actionTypes';
+import * as types from '../ActionTypes/actionTypes';
 import axios from 'axios';
 
 export const getTShirt = (payload) => ({
@@ -19,7 +19,7 @@ export const getTShirtFailure = (payload)=> ({
 export const getTShirtData =(payload)=>{
     return (dispatch) => {
         dispatch(getTShirt());
-        axios.get(`http://localhost:8080/Tshirt`,{
+        axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/tshirt`,{
             params:{
                 ...payload,
             }

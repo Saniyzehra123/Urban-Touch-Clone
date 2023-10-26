@@ -7,7 +7,10 @@
     
   
 }
- 
+ .Carousel{
+    width: 100%;
+    overflow: hidden;
+ }
 .imgtext> p{
     text-align: center;
     color:white;
@@ -32,21 +35,18 @@
 }
 .bannercontainer{
     width: 100%;
-    height: 1400px;
+    height: 685px;
     background-color: rgb(29, 90, 90);
-    margin-top: 15%;
+    /* margin-top: 15%; */
  
 }
-.casual{
-    width: 100%;
-    height:100%;
-   
-}
+ 
 .urbanpic{
-    width: 100%;
+    /* width: 100%; */
     height:auto;
     z-index: 0;
-   
+     
+ 
 }
 .urbanpic>img{
     width: 100%;
@@ -54,77 +54,12 @@
     object-fit:contain;
  
 }
-/* .casualcontainer{
+.featurecontainer{
     width: 100%;
-    height: 1400px;
-    background-color: rgb(17, 113, 113);
-} */
-.moreh{
-    /* margin-top: -120%; */
-    font-size: 20px;
-    border: 2px solid red;
-    text-align: left;
-    padding-left: 6%;
-   
+    height: 1200px;
+    background-color: aqua;
 }
-.moreh>p{
-    font-size: 27px;
-    font-weight: 320;
-}
-.more{
-    width: 100%;
-    display: flex;
-  justify-content: space-around;
-    cursor: pointer;
-    /* margin-top: -120%; */
-    
-}
-.moreleft{
-    width:50%;
-    height: 800px;
-    /* margin-left: 6%; */
-    transition: transform .2s; /* Animation */
-    background-color: aquamarine;
-
-}
-.moreleft>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-.tshirtname{
-    font-size: 24px;
-    font-weight: 320;
-    text-align: left;
-}
-.denimsname{
-    font-size: 24px;
-    font-weight: 320;
-    text-align: left;
-    padding-left: 26%;
-}
-.moreleft:hover{
-   
-    transform: scale(1.03);
-}  
-/* .moreright>p{
-    padding-right: 7%;
-} */
-.moreright>p:nth-child(3){
-    /* padding-right: 25%; */
-}
-.moreright {
-    width:40%;
-    /* padding-left:10px ; */
-    
-    text-align: left;
-    background-color: bisque;
-}
-.grey{
-    /* margin-left:6%; */
-    /* margin-top: 10%; */
-}
+ 
 .feature{
     margin-top: 2%;
     display: grid;
@@ -135,20 +70,27 @@
         grid-gap: 25px;
         cursor: pointer;
 }
-/* .feature>div>img{
-    width: 120%;
-    height: 400px;
-} */
+ 
 .prodimgs{
     position: relative;
     display: inline-block;
-    /* border: 1px solid #000; */
-    margin-left: 10%;
-    width: 90%;
+    width: 100%;
+    height: 300px;
+    /* z-index: 2; */
+}
+.heart{
+    position: absolute;
+    font-size: 20px;
+    left:88%;
+    color: red;
+    z-index: 1;
+    float: right;
+    object-position: right;
+    margin-top: 15px;
 }
 .fecimg{
-    width: 110%;
-    height: 400px;
+    width: 100%;
+     height:100%;
     /* border: 1px solid rgb(209, 56, 56); */
 }
 .prodimgs> .flip{
@@ -159,11 +101,13 @@
 }
 .prodimgs:hover .flip{
     display: inline;
-    width: 120%;
-    height: 400px;
+    width: 100%;
+    height:100%;
+    /* object-fit: cover; */
 }
-.prodimgs>p{
+.prodimgstext{
     text-align: left;
+    
     color: rgb(104, 101, 101);
 }
 /* .featuretitle{
@@ -172,8 +116,8 @@
 .featuretitle{
     font-size: 35px;
     font-weight: 200;
-    padding-right: 65%;
     margin-top: -10%;
+    padding:30px 0px 0px 0px;
 }
 .card {
     /* width: 80%;
@@ -202,46 +146,28 @@
     height: 480px;
     
 }
-.video{
-    margin-top:5% ;
-    /* border: 1px solid black; */
-    width :100%;
-    height: 600px;
-}
-.video>img{
-    width :100%;
-    height: 550px;
-}
-.iconplay{
+.videodiv{
+    width: 100%;
+    height: 500px;
+     overflow: hidden;
     position: relative;
+    /* border: 1px solid red; */
+    z-index: 1;
+}
+ 
+.iconplay{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin-top: 20%;
     /* color: white; */
-    margin-top: -23%;
+    background-color: transparent;
     margin-left: 47%;
     background-color: rgb(255, 248, 248);
-    border-radius: 60%;
-    width: 5%;
-    height: 65px;
-    padding : 20px 25px;
+    border-radius: 50%;
+    
+    
     /* display: block; */
-   
-
 }
-
-.iconplay::before{
-     
-    /* background-color: transparent; */
-    display: none;
-
-    /* position: relative;
-    color: white;
-    margin-top: -0;
-    text-align: center;
-    justify-content: center; */
-}
-.iconplay>img{
-    background-color: transparent;
-}
-.video>iconplay{
-    display: none;
-}
+ 
  
