@@ -1,4 +1,3 @@
- 
 import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
 import { NavLink, useNavigate } from "react-router-dom";
@@ -8,29 +7,52 @@ import { Card, Col,FormCheck, Row ,Accordion} from 'react-bootstrap';
 import { AiFillHeart, AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 import { BiRupee } from 'react-icons/bi';
 import Form from 'react-bootstrap/Form';
+import axios from 'axios';
 
 export default function Tshirt() {
-    const [data,setdata] = useState([]);
+    const [data, setdata] = useState([]);
+    const [sort, setsort] = useState();
+    const [search, setsearch] = useState();
     const [clicked,setClicked]=useState(false)
 
     const handelClick=()=>{
       setClicked(!clicked)
     }
+
+    // const handleOnchange=(e)=>{
+    //   e.preventDefault()
+    // }
+    // const handleSearch =(e)=>{
+    //   e.preventDefault()
+    // }
     const dispatch = useDispatch();
     const navigate = useNavigate();
-      const  tshirts = useSelector( store =>  store.tshirtreducer.tshirts);
-  
+    let tshirts = useSelector( store =>  store.tshirtreducer.tshirts);
+   tshirts=tshirts.tshirt
  //     // const {loading,error} = useSelector( store =>  store.newarrival);
- 
-   useEffect(() => {
-      dispatch(getTShirtData());
-  },[dispatch.tshirts?.length]);
-   console.log("tshirt",tshirts)
+ useEffect(() => {
+   dispatch(getTShirtData());
+   console.log("res====================================>")
+  },[dispatch,tshirts?.length]);
+  console.log("tshirt",tshirts)
+  // useEffect(() =>{
+  // dispatch(getTShirtData(search,sort));
+  //  },[search,sort])
+  const getAsyncCall = () => {
+    axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/tshirt`)
+    .then(response => {
+      console.log("rest", response);
+    })
+    .catch(error => {
+      console.log("error", error);
+    });
+  }
+  getAsyncCall();
+
 return (
  <div>
-    
     <h1 className='heading'> T SHIRTS</h1>
-      <h2 className='subtitle'> Features t-shirt collection from urbantouch, Choose your favourite outfit  <br/>  from a wide range of collection.</h2>
+    <h2 className='subtitle'> Features t-shirt collection from urbantouch, Choose your favourite outfit  <br/>  from a wide range of collection.</h2>
       <Row>
         <Col className="float-start" xs={12} md={2} ms={4} lg={2} >
         <Accordion defaultActiveKey="0">
@@ -190,6 +212,7 @@ return (
     {/* <div className='tshirtcontainer'>  */}
    {
       tshirts.map((tshirt,index)=>{
+      
           return(
             <Col className='float-end' xs={12} md={2} ms={4} lg={3}  style={{padding:"20px"}}  key={tshirt.id}>  
               <Card style={{ width: '15rem',height:"400px"}}   >

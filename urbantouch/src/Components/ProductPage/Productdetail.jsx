@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import {GrAdd} from 'react-icons/gr'
@@ -31,52 +30,47 @@ export default function Productdetail({product}) {
   
   //console.log("prod",cart)
   const dispatch = useDispatch();
-const handleadd= ()=>{
- 
-  setcount(count+1)
+  const handleadd= ()=>{
+    setcount(count+1)
   }
-const handlesub= ()=>{
-if(count <= 0){
+  const handlesub= ()=>{
+  if(count <= 0){
     return
-}
-setcount(count-1)
-}
+  }
+  setcount(count-1)
+  }
 
   const {id,end}=useParams();
   console.log("id",id,"end",end)
        
-        const [current, setCurrent]=useState({});
-        //console.log("curr",cart) 
-        useEffect(()=>{
-    axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/${end}/${id}`).then(res=>{
+    const [current, setCurrent]=useState({});
+    //console.log("curr",cart) 
+    useEffect(()=>{
+      axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/${end}/${id}`).then(res=>{
       setCurrent(res.data)
       console.log("data",res.data)
-    }
-    )
-    .catch(err=>{
+    })
+      .catch(err=>{
       console.log(err)
-    }
-    )
-        } ,[])
-
-
- 
+    })
+    } ,[])
 
         const  addToCartHandeler = () => {
-          current && dispatch(addProductCart(current))
-      console.log("current",current)
-          // .then(()=>dispatch(getProduct()))
-          // .then(()=>{
-          //   navigate("/yourcart")
-          // })
+          current && dispatch(addProductCart(current._id))
+          console.log("current",current._id)
         
         }
 
-  //         useEffect(()=>{
-  //   if(id) {
-  //     dispatch(getProduct)
+    
+  
+  // const addToCartHandler = async () => {
+  //   try {
+  //     await dispatch(addProductCart(current));
+  //     navigate("/yourcart");
+  //   } catch (error) {
+  //     console.error("Error adding to cart:", error);
   //   }
-  // },[])
+  // };
 
   return (
     <Container className='prodcontainer'>
@@ -112,7 +106,7 @@ setcount(count-1)
           <h2>{count}</h2>
           <Button variant="light"  >+</Button>
         </div> */}
-        <Button variant="outline-dark " className='addproduct' >Add to cart</Button>
+        <Button variant="outline-dark " className='addproduct' onClick={addToCartHandeler} >Add to cart</Button>
         <br />
         <Button variant="dark outline-dark" className='buyproduct'>Buy it now</Button>
       </Col>

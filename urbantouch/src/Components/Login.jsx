@@ -53,7 +53,7 @@ const all = useSelector((state)=>state.signIn)
     <div  >
         {/* <Link to="/"> <Navbar/> </Link> */}
         <h1 className='log'>Login</h1>
-        <form > 
+        <form className='logform'> 
         <input
       
           className="Input"
@@ -78,10 +78,10 @@ const all = useSelector((state)=>state.signIn)
       />
       
         <br />
-        <div className='login'> 
+        <div className='login-div'> 
         <p>Forgot your password</p>
         <br />
-        <button style={{backgroundColor:"#0b0b0b",color:"white", width:"14%" ,height:"40px",borderRadius:"none" ,fontSize:"15px"}} 
+        <button style={{backgroundColor:"#0b0b0b",color:"white", width:"40%" ,height:"40px",borderRadius:"none" ,fontSize:"15px"}} 
         onClick={handleSubmit}
         type="submit"
         >

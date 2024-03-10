@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
 import { getShirtData } from '../../Redux/Shirt/action';
 import "../ProductPage/Shirts.css";
 import Pagination from 'react-bootstrap/Pagination';
@@ -14,17 +14,35 @@ export default function Shirt() {
 
   const [data,setdata] = useState([]);
   const [clicked,setClicked]=useState(false)
+  const [category,setcategory]=useState([])
   const handelClick=()=>{
     setClicked(!clicked)
   }
+ 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const  shirts = useSelector( store =>  store.shirtreducer.shirts);
     //     // const {loading,error} = useSelector( store =>  store.newarrival);
     
+///////filter////////////
+
+const [searchParams, setSearchParams] = useSearchParams()
+const [colorValues, setColorValues] = useState(
+  searchParams.getAll('color') || []);
+ const colorHandler = (values) => {
+  console.log("VALUE",values)
+  setColorValues(values)
+}
+
     useEffect(() => {
-      dispatch(getShirtData());
-        
+      let params;
+      if(colorValues) {
+        setSearchParams({'color':colorValues}, { replace: true })
+        params={
+          "color":searchParams.getAll('color'),
+         }
+      dispatch(getShirtData(params));
+     } 
     },[dispatch.shirts?.length]);
     console.log("shirt",shirts)
 
@@ -41,19 +59,22 @@ export default function Shirt() {
       <h2 className='shirtsubtitle'> features shirts from urbantouch. Choose the best outfit from a wide range  <br/> of collection.</h2>
       <Row className='mt-5'>
         <Col xs={12} md={4} lg={3} className="filter-col">
-        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
+        <Accordion defaultActiveKey="0" >
+      <Accordion.Item eventKey="0" defaultValue={colorValues} onChange={colorHandler} >
         <Accordion.Header>Color</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body  >
           <Form>
             <FormCheck
             type='checkbox'
-            label="dark blue"
+            value='dark blue'
+            label="Dark Blue"
+            
             />
           </Form>
           <Form>
             <FormCheck
             type='checkbox'
+            value='black'
             label="black"
             />
           </Form>
@@ -269,23 +290,4 @@ export default function Shirt() {
 }
 
 
-
-// export default function Newarrival() {
-//     const [data,setdata] = useState([]);
-
-//     const dispatch = useDispatch();
-//     const navigate = useNavigate();
-//     const products = useSelector( store =>  store.newarrivalreducer.products);
  
-//     // const {loading,error} = useSelector( store =>  store.newarrival);
-
-//     useEffect(() => {
-//         dispatch(getMensData());
-//     },[dispatch.products?.length]);
-//     console.log("prop",products)
-//   return (
-//     <div>
-        
-//         </div>
-
-//   )}

@@ -59,8 +59,7 @@
 /* Filter Section Styles */
 .filter-col {
     background-color: #f9f9f9;
-    padding: 20px;
-    height: 100vh; /* Adjust the height as needed */
+    /* padding: 20px; */
   }
   
   /* Product List Section Styles */
@@ -90,7 +89,7 @@
   /* Responsive Media Query */
   @media (max-width: 768px) {
     .filter-col {
-      display: none;
+      /* display: none; */
     }
   
     .product-col {

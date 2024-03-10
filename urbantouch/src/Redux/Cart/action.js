@@ -30,7 +30,7 @@ import axios from 'axios';
 export const addProductCart  = (payload) => dispatch => {
     dispatch({type:types.ADD_PRODUCT_CART_REQUEST});
     return axios.post('https://nice-blue-zebra-hose.cyclic.app/api/cart', payload)
-  //  console.log("pro",product)
+    console.log("pro",payload)
     .then((r) => dispatch({type:types.ADD_PRODUCT_CART_SUCCESS,payload:r.data}))
     .catch((e) => dispatch({type:types.ADD_PRODUCT_CART_FAILURE, payload:e}));
 }
