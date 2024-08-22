@@ -20,7 +20,7 @@ export const getTShirtData =(payload)=>{
     console.log("pay",payload)
     return (dispatch) => {
         dispatch(getTShirt());
-        axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/tshirt`,{
+        axios.get(`https://urban-backend-z57n.onrender.com/api/tshirt`,{
             params:{
                 ...payload,
             }

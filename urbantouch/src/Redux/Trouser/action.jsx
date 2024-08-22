@@ -25,7 +25,7 @@ export const getTrouserFailure = (payload)=> ({
 export const getTrouserData =(payload)=>{
     return (dispatch) => {
         dispatch(getTrouser());
-        axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/bottom`,{
+        axios.get(`https://urban-backend-z57n.onrender.com/api/bottom`,{
             params:{
                 ...payload,
             }

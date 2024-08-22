@@ -27,17 +27,14 @@ export default function Tshirt() {
     // }
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    let tshirts = useSelector( store =>  store.tshirtreducer.tshirts);
-   tshirts=tshirts.tshirt
- //     // const {loading,error} = useSelector( store =>  store.newarrival);
- useEffect(() => {
-   dispatch(getTShirtData());
-   console.log("res====================================>")
-  },[dispatch,tshirts?.length]);
-  console.log("tshirt",tshirts)
-  // useEffect(() =>{
-  // dispatch(getTShirtData(search,sort));
-  //  },[search,sort])
+    const tshirts = useSelector( store =>  store.tshirtreducer.tshirts);
+    const {tshirt, totalPage }=tshirts;
+  
+  useEffect(() => {
+    dispatch(getTShirtData());
+    setdata(tshirt)
+   },[dispatch,tshirts?.length]);
+
   const getAsyncCall = () => {
     axios.get(`https://nice-blue-zebra-hose.cyclic.app/api/tshirt`)
     .then(response => {
@@ -211,7 +208,7 @@ return (
       
     {/* <div className='tshirtcontainer'>  */}
    {
-      tshirts.map((tshirt,index)=>{
+       data?.map((tshirt,index)=>{
       
           return(
             <Col className='float-end' xs={12} md={2} ms={4} lg={3}  style={{padding:"20px"}}  key={tshirt.id}>  
